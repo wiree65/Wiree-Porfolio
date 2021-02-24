@@ -61,17 +61,53 @@ const Home = () => {
             ></div>
             <div className="typing">
               <Typing
-                bio="Computer Science who interested in mobile and web development"
+                bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry."
                 speed={40}
               ></Typing>
             </div>
           </div>
         </div>
         <div>
+          <div>
+          <button className="button">
+                
+                  <span
+                    style={{
+                      padding: "0 0 0 10px",
+                      fontSize: "1.1rem",
+                      backgroundColor: "transparent",
+                    }}
+                  >
+                    Edit{" "}
+                  </span>
+                </button>
+            </div>
           <Footer></Footer>
         </div>
       </Layout>
       <style jsx>{`
+        .button {
+          border-radius: 2vh;
+          background-color: #D18585;
+          border: none;
+          width:10vw;
+          outline: none;
+        }
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        .button span:after {
+          color: #D18585;
+          content: ">>";
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -25px;
+          transition: 0.5s;
+        }
         . container-md {
           display: flex;
           justify-content: center;

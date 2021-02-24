@@ -63,9 +63,7 @@ const About = () => {
               >
                 <div className="typing">
                   <Typing
-                    bio="Hi everyone, I am a sophomore student in Computer Science
-                  (International Program) at School of Information Teachnology, 
-                  King Mongkut's University of Technology Thonburi (KMUTT)"
+                    bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industy's standard dummy text ever since the 1500s,"
                     speed={40}
                   ></Typing>
                 </div>
