@@ -61,7 +61,7 @@ const Home = () => {
             ></div>
             <div className="typing">
               <Typing
-                bio="Computer Science who interested in mobile and web deverlopment"
+                bio="Computer Science who interested in mobile and web development"
                 speed={40}
               ></Typing>
             </div>
