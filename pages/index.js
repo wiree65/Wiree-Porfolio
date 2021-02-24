@@ -1,65 +1,182 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { Fragment, useState, useEffect } from "react";
+import Layout from "../component/Layout";
+import Typing from "../component/typing";
+import Footer from "../component/Footer";
+const Home = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
 
-export default function Home() {
+      window.addEventListener("resize", handleResize);
+
+      handleResize();
+
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  const isMobile = windowSize.width < 768;
+  const { height } = windowSize;
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <Fragment>
+      <Layout page="home">
+        <div className={` ${isMobile ? "container-mobile" : "container"}`}>
+          <img
+            src="/images/profile.png"
+            width="400px"
+            height="auto"
+            className="profilePic"
+            alt="profile picture"
+          ></img>
+          <div className="column-con">
+            <div>
+              <div className={` ${isMobile ? "row-con" : ""}`}>
+                <h1 className="text">Hello, </h1>
+                <div className="row-con">
+                  <h1 className="text">I’m </h1>
+                  <h1
+                    className="text"
+                    style={{ paddingLeft: "10px", color: "#D18585" }}
+                  >
+                    {" "}
+                    WIRAWAT JAIARREE
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundColor: "#D18585",
+                width: "35vw",
+                height: "3px",
+              }}
+            ></div>
+            <div className="typing">
+              <Typing
+                bio="Computer Science who interested in mobile and web deverlopment"
+                speed={40}
+              ></Typing>
+            </div>
+          </div>
         </div>
-      </main>
+        <div>
+          <Footer></Footer>
+        </div>
+      </Layout>
+      <style jsx>{`
+        . container-md {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+        }
+        .container {
+          min-height: 80vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+        }
+        .container-mobile {
+          min-height: 80vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+        .column-con {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .row-con {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+        }
+        .typing {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation-name: example;
+          animation-duration: 4s;
+        }
+        .text {
+          font-size: 3vw;
+        }
+
+        @keyframes example {
+          0% {
+            opacity: 0%;
+          }
+          25% {
+            opacity: 40%;
+          }
+          50% {
+            opacity: 60%;
+          }
+          75% {
+            opacity: 80%;
+          }
+          100% {
+            opacity: 100%;
+          }
+        }
+        @media only screen and (max-width: 720px) {
+          .column-con {
+            display: flex;
+            width: 50vw;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .column-con-md {
+            min-height: 20vh;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .text {
+            font-size: 4vw;
+          }
+        }
+        @media only screen and (max-width: 1080px) {
+          .column-con {
+            display: flex;
+            width: 60vw;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .column-con-md {
+            min-height: 20vh;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .text {
+            font-size: 4vw;
+          }
+        }
+      `}</style>
+    </Fragment>
+  );
+};
+
+export default Home;
