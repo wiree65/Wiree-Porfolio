@@ -48,11 +48,7 @@ const General = (props) => {
         .footerContainer {
           min-height: 10vh;
         }
-        @media only screen and (max-width: 720px) {
-          .contentContainer {
-            padding: 40px 15px 0 15px;
-          }
-        }
+      
       `}</style>
     </Fragment>
   );

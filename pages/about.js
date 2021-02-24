@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <Fragment>
-<div style={{margin:'10px'}}>
+<div style={{marginTop:'20px'}}>
       <Layout page="about" >
         <div className="motion" >
           <div className={` ${isMobile ? "container-mobile" : "container"}`}>
@@ -63,7 +63,8 @@ const About = () => {
               >
                 <div className="typing">
                   <Typing
-                    bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industy's standard dummy text ever since the 1500s,"
+                    bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industy's standard dummy text ever since the 1500s,"
                     speed={40}
                   ></Typing>
                 </div>

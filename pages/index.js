@@ -24,73 +24,93 @@ const Home = () => {
     }
   }, []);
   const isMobile = windowSize.width < 768;
-  const { height } = windowSize;
   return (
     <Fragment>
-      <Layout page="home">
-        <div className={` ${isMobile ? "container-mobile" : "container"}`}>
-          <img
-            src="/images/profile.png"
-            width="400px"
-            height="auto"
-            className="profilePic"
-            alt="profile picture"
-          ></img>
-          <div className="column-con">
-            <div>
-              <div className={` ${isMobile ? "row-con" : ""}`}>
-                <h1 className="text">Hello, </h1>
-                <div className="row-con">
-                  <h1 className="text">I’m </h1>
-                  <h1
-                    className="text"
-                    style={{ paddingLeft: "10px", color: "#D18585" }}
-                  >
-                    {" "}
-                    WIRAWAT JAIARREE
-                  </h1>
+      <div style={{ marginTop: "20px" }}>
+        <Layout page="home">
+          <div className="motion">
+            <div className={` ${isMobile ? "container-mobile" : "container"}`}>
+              <img
+                src="/images/profile.png"
+                width="400px"
+                height="auto"
+                className="profilePic"
+                alt="profile picture"
+              ></img>
+              <div className="column-con">
+                <div>
+                  <div className={` ${isMobile ? "row-con" : ""}`}>
+                    <h1 className="text">Hello, </h1>
+                    <div className="row-con">
+                      <h1 className="text">I’m </h1>
+                      <h1
+                        className="text"
+                        style={{ paddingLeft: "10px", color: "#D18585" }}
+                      >
+                        {" "}
+                        WIRAWAT JAIARREE
+                      </h1>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div
-              style={{
-                backgroundColor: "#D18585",
-                width: "35vw",
-                height: "3px",
-              }}
-            ></div>
-            <div className="typing">
-              <Typing
-                bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry."
-                speed={40}
-              ></Typing>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-          <button className="button">
-                
+                <div
+                  style={{
+                    backgroundColor: "#D18585",
+                    width: "35vw",
+                    height: "3px",
+                  }}
+                ></div>
+                <div className="typing">
+                  <Typing
+                    bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry."
+                    speed={40}
+                  ></Typing>
+                </div>
+                <button className="button">
                   <span
                     style={{
                       padding: "0 0 0 10px",
-                      fontSize: "1.1rem",
+                      fontSize: "14px",
                       backgroundColor: "transparent",
                     }}
                   >
-                    Edit{" "}
+                    More infomation about me{" "}
                   </span>
                 </button>
+              </div>
             </div>
-          <Footer></Footer>
-        </div>
-      </Layout>
+            <div>
+              <div></div>
+              <Footer></Footer>
+            </div>
+          </div>
+        </Layout>
+      </div>
       <style jsx>{`
+        .motion {
+          position: relative;
+          animation: mymove 1s;
+        }
+        @keyframes mymove {
+          from {
+            top: -100px;
+          }
+          to {
+            top: 0px;
+          }
+        }
+
         .button {
-          border-radius: 2vh;
-          background-color: #D18585;
+          background-color: #d18585;
+
+          width: 15vw;
+          height: 5vh;
+          border-radius: 30px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border: none;
-          width:10vw;
           outline: none;
         }
         .button span {
@@ -100,14 +120,29 @@ const Home = () => {
           transition: 0.5s;
         }
         .button span:after {
-          color: #D18585;
-          content: ">>";
+          content: "";
           position: absolute;
           opacity: 0;
           top: 0;
-          right: -25px;
+          // right: -25px;
           transition: 0.5s;
         }
+        .button:hover span {
+          padding-right: 25px;
+        }
+        .button:hover {
+          // transition: 0.5s;
+          color: #d18585;
+          border: solid;
+          background-color: white;
+          opacity: 1;
+          right: 1;
+        }
+        .button:hover span:after {
+          opacity: 1;
+          right: 1;
+        }
+
         . container-md {
           display: flex;
           justify-content: center;
@@ -177,6 +212,10 @@ const Home = () => {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+          }
+          .button{
+            width:29vw;
+       
           }
           .column-con-md {
             min-height: 20vh;
