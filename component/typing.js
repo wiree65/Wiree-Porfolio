@@ -27,7 +27,7 @@ const Typing = ({ bio, speed }) => {
   }, []);
   return (
     <Fragment>
-      <p style={{ padding: "5px", display: "flex" }}>{text}</p>
+      <p style={{ display: "flex" }}>{text}</p>
       <div style={getCursorStyle()}></div>
     </Fragment>
   );

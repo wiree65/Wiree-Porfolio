@@ -25,12 +25,12 @@ const Nav = ({ page }) => {
       </div>
       <style jsx>{`
         .container {
-          height:10vh;
+
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
           align-items: center;
-          margin-right:50px
+          margin-right:20px
         }
         .font{
 

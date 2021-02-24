@@ -2,6 +2,8 @@ import { Fragment, useState, useEffect } from "react";
 import Layout from "../component/Layout";
 import Typing from "../component/typing";
 import Footer from "../component/Footer";
+import Link from "next/link";
+
 const Home = () => {
   const [windowSize, setWindowSize] = useState({
     width: undefined,
@@ -59,25 +61,30 @@ const Home = () => {
                     width: "35vw",
                     height: "3px",
                   }}
-                ></div>
+                >
                 <div className="typing">
                   <Typing
                     bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry."
                     speed={40}
                   ></Typing>
                 </div>
-                <button className="button">
-                  <span
-                    style={{
-                      padding: "0 0 0 10px",
-                      fontSize: "14px",
-                      backgroundColor: "transparent",
-                    }}
-                  >
-                    More infomation about me{" "}
-                  </span>
-                </button>
+                <div className="containerButon">
+                <Link href='/about'>
+                  <button className="button">
+                    <span
+                      style={{
+                        padding: "0 0 0 10px",
+                        fontSize: "14px",
+                        backgroundColor: "transparent",
+                      }}
+                    >
+                      More infomation about me{" "}
+                    </span>
+                  </button>
+                  </Link>
+                </div>
               </div>
+            </div>
             </div>
             <div>
               <div></div>
@@ -87,6 +94,13 @@ const Home = () => {
         </Layout>
       </div>
       <style jsx>{`
+        .containerButon {
+          width:100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-direction: row;
+        }
         .motion {
           position: relative;
           animation: mymove 1s;
@@ -213,9 +227,8 @@ const Home = () => {
             align-items: center;
             flex-direction: column;
           }
-          .button{
-            width:29vw;
-       
+          .button {
+            width: 29vw;
           }
           .column-con-md {
             min-height: 20vh;
@@ -236,6 +249,9 @@ const Home = () => {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+          }
+          .button {
+            width: 29vw;
           }
           .column-con-md {
             min-height: 20vh;

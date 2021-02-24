@@ -41,13 +41,6 @@ const General = (props) => {
           display: flex;
           flex-direction: column;
         }
-        .contentContainer {
-          min-height: 90vh;
-          padding: 40px 40px 0 40px;
-        }
-        .footerContainer {
-          min-height: 10vh;
-        }
       
       `}</style>
     </Fragment>

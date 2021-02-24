@@ -27,96 +27,96 @@ const About = () => {
 
   return (
     <Fragment>
-<div style={{marginTop:'20px'}}>
-      <Layout page="about" >
-        <div className="motion" >
-          <div className={` ${isMobile ? "container-mobile" : "container"}`}>
-            <img
-              src="/images/profile.png"
-              width="400px"
-              height="auto"
-              className="profilePic"
-              alt="profile picture"
-            ></img>
-            <div className="column-con">
-              <div>
-                <div className={` ${isMobile ? "row-con" : ""}`}>
-                  <h1 className="text">Hello, </h1>
-                  <div className="row-con">
-                    <h1 className="text">I’m </h1>
-                    <h1
-                      className="text"
-                      style={{ paddingLeft: "10px", color: "#D18585" }}
-                    >
-                      {" "}
-                      WIRAWAT JAIARREE
-                    </h1>
+      <div style={{marginTop:'20px'}}>
+        <Layout page="about">
+          <div className="motion">
+            <div className={` ${isMobile ? "container-mobile" : "container"}`}>
+              <img
+                src="/images/profile.png"
+                width="400px"
+                height="auto"
+                className="profilePic"
+                alt="profile picture"
+              ></img>
+              <div className="column-con">
+                <div>
+                  <div className={` ${isMobile ? "row-con" : ""}`}>
+                    <h1 className="text">Hello, </h1>
+                    <div className="row-con">
+                      <h1 className="text">I’m </h1>
+                      <h1
+                        className="text"
+                        style={{ paddingLeft: "10px", color: "#D18585" }}
+                      >
+                        {" "}
+                        WIRAWAT JAIARREE
+                      </h1>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                style={{
-                  backgroundColor: "#D18585",
-                  width: "35vw",
-                  height: "3px",
-                }}
-              >
-                <div className="typing">
-                  <Typing
-                    bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry. 
+                <div
+                  style={{
+                    backgroundColor: "#D18585",
+                    width: "35vw",
+                    height: "3px",
+                  }}
+                >
+                  <div className="typing">
+                    <Typing
+                      bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industy's standard dummy text ever since the 1500s,"
-                    speed={40}
-                  ></Typing>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container">
-            <div className="info">
-              <div className="container-card">
-                <h1 style={{ color: "#D18585" }}>Education</h1>
-                <div className="card">
-                  <p>Prommanusorn School 2012 - 2018</p>
-                  <p>Math-Computer GPAX : 3.81</p>
-                </div>
-
-                <div className="card" style={{ marginTop: "2rem" }}>
-                  <p>King Mongkut's University of Technology Thonburi</p>
-                  <p>2019 - Present</p>
-                  <p>I'm currently studying bachelor's second year of</p>
-                  <p>Computer Science at School of Information Technology</p>
-                  <p>Current GPAX : 3.65</p>
-                </div>
-              </div>
-              <div className="container-card">
-                <h1 style={{ color: "#D18585" }}>Experiences</h1>
-                <div className="card">
-                  <p>(CSC105 Web Application Development Project)</p>
-                  <p>Stack:</p>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      flexDirection: "column",
-                    }}
-                  >
-                    <p>- Front End Framework : VueJS</p>{" "}
-                    <p>- Back End Framework : Java Servle</p>{" "}
-                    <p>- CSS Framework : Vuetify</p>
-                    <p>- Tools : Gitlab, Github</p>
-                    <p>info:</p>
-                    <p>- Link : github.com/wiree65/staff</p>
-                    <p>- Site : csb.cscms.me/staff</p>
+                      speed={40}
+                    ></Typing>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <Footer></Footer>
-        </div>
-      </Layout>
+          <div>
+            <div className="container">
+              <div className="info">
+                <div className="container-card">
+                  <h1 style={{ color: "#D18585" }}>Education</h1>
+                  <div className="card">
+                    <p>Prommanusorn School 2012 - 2018</p>
+                    <p>Math-Computer GPAX : 3.81</p>
+                  </div>
+
+                  <div className="card" style={{ marginTop: "2rem" }}>
+                    <p>King Mongkut's University of Technology Thonburi</p>
+                    <p>2019 - Present</p>
+                    <p>I'm currently studying bachelor's second year of</p>
+                    <p>Computer Science at School of Information Technology</p>
+                    <p>Current GPAX : 3.65</p>
+                  </div>
+                </div>
+                <div className="container-card">
+                  <h1 style={{ color: "#D18585" }}>Experiences</h1>
+                  <div className="card">
+                    <p>(CSC105 Web Application Development Project)</p>
+                    <p>Stack:</p>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <p>- Front End Framework : VueJS</p>{" "}
+                      <p>- Back End Framework : Java Servle</p>{" "}
+                      <p>- CSS Framework : Vuetify</p>
+                      <p>- Tools : Gitlab, Github</p>
+                      <p>info:</p>
+                      <p>- Link : github.com/wiree65/staff</p>
+                      <p>- Site : csb.cscms.me/staff</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Footer></Footer>
+          </div>
+        </Layout>
       </div>
 
       <style jsx>{`
