@@ -86,7 +86,10 @@ const Home = () => {
                         </span>
                       </button>
                     </Link>
+                    
                   </div>
+      <Footer></Footer>
+
                 </div>
               </div>
             </div>
@@ -97,7 +100,6 @@ const Home = () => {
         </Layout>
       </div>
   
-      <Footer></Footer>
       <br/>
       <style jsx>{`
         .line {
@@ -116,14 +118,6 @@ const Home = () => {
           position: relative;
           animation: mymove 1s;
         }
-        // @keyframes mymove {
-        //   from {
-        //     top: -100px;
-        //   }
-        //   to {
-        //     top: 0px;
-        //   }
-        // }
 
         .button {
           background-color: #d18585;
