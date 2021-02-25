@@ -200,7 +200,7 @@ const About = () => {
           animation-duration: 4s;
         }
         .text {
-          font-size: 3vw;
+          font-size: 1vw;
         }
 
         @keyframes example {
@@ -237,7 +237,7 @@ const About = () => {
             flex-direction: column;
           }
           .text {
-            font-size: 4vw;
+            font-size: 3vw;
           }
         }
         @media only screen and (max-width: 1080px) {
