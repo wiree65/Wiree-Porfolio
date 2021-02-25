@@ -39,15 +39,26 @@ const Home = () => {
                 className="profilePic"
                 alt="profile picture"
               ></img>
-              <div className="column-con">
+              <div className="column-con" style={{marginTop:'-100px'}}>
                 <div>
                   <div className={` ${isMobile ? "row-con" : ""}`}>
-                    <h1 className="text">Hello, </h1>
+                    <h1 className="text" style={{ margin: "0px" }}>
+                      Hello,{" "}
+                    </h1>
                     <div className="row-con">
-                      <h1 className="text">I’m </h1>
                       <h1
                         className="text"
-                        style={{ paddingLeft: "10px", color: "#D18585" }}
+                        style={{ margin: "20px 0px 0px 0px" }}
+                      >
+                        I’m{" "}
+                      </h1>
+                      <h1
+                        className="text"
+                        style={{
+                          paddingLeft: "10px",
+                          color: "#D18585",
+                          margin: "20px 0px 0px 10px",
+                        }}
                       >
                         {" "}
                         WIRAWAT JAIARREE
@@ -62,29 +73,41 @@ const Home = () => {
                     height: "3px",
                   }}
                 >
-                <div className="typing">
-                  <Typing
-                    bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry."
-                    speed={40}
-                  ></Typing>
-                </div>
-                <div className="containerButon">
-                <Link href='/about'>
-                  <button className="button">
-                    <span
-                      style={{
-                        padding: "0 0 0 10px",
-                        fontSize: "14px",
-                        backgroundColor: "transparent",
-                      }}
-                    >
-                      More infomation about me{" "}
-                    </span>
-                  </button>
-                  </Link>
+                  <div className="typing">
+                    <Typing
+                      bio="Welcome to my online portfolio website"
+                      speed={40}
+                    ></Typing>
+                  </div>
+                  <div className="typing">
+                   <p style={{margin:'0px'}}>I’m freelance graphic, interactive design, and full stack development
+                     </p>
+                     
+                  </div>
+                  <div className="typing">
+                   <p tyle={{margin:'0px'}}>Just a frinedly note, you can call me
+                     </p>
+                     <p style={{margin:'0px', fontWeight:'600'}}>“Katak”
+                     </p>
+                  </div>
+
+                  <div className="containerButon">
+                    <Link href="/about">
+                      <button className="button">
+                        <span
+                          style={{
+                            padding: "0 0 0 10px",
+                            fontSize: "14px",
+                            backgroundColor: "transparent",
+                          }}
+                        >
+                          More infomation about me{" "}
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
             <div>
               <div></div>
@@ -95,7 +118,7 @@ const Home = () => {
       </div>
       <style jsx>{`
         .containerButon {
-          width:100%;
+          width: 100%;
           display: flex;
           justify-content: flex-end;
           align-items: center;
@@ -159,12 +182,12 @@ const Home = () => {
 
         . container-md {
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
           flex-direction: row;
         }
         .container {
-          min-height: 80vh;
+          min-height:85vh;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -191,9 +214,11 @@ const Home = () => {
           flex-direction: row;
         }
         .typing {
+          margin: 0px;
+          padding:0px;
           text-align: center;
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
           animation-name: example;
           animation-duration: 4s;

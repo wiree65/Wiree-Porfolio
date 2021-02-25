@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <Fragment>
-      <div style={{marginTop:'20px'}}>
+      <div style={{ marginTop: "20px" }}>
         <Layout page="about">
           <div className="motion">
             <div className={` ${isMobile ? "container-mobile" : "container"}`}>
@@ -41,12 +41,23 @@ const About = () => {
               <div className="column-con">
                 <div>
                   <div className={` ${isMobile ? "row-con" : ""}`}>
-                    <h1 className="text">Hello, </h1>
+                    <h1 className="text" style={{ margin: "0px" }}>
+                      Hello,{" "}
+                    </h1>
                     <div className="row-con">
-                      <h1 className="text">I’m </h1>
                       <h1
                         className="text"
-                        style={{ paddingLeft: "10px", color: "#D18585" }}
+                        style={{ margin: "15px 0px 0px 10px" }}
+                      >
+                        I’m{" "}
+                      </h1>
+                      <h1
+                        className="text"
+                        style={{
+                          paddingLeft: "10px",
+                          color: "#D18585",
+                          margin: "15px 0px 0px 10px",
+                        }}
                       >
                         {" "}
                         WIRAWAT JAIARREE
@@ -61,19 +72,24 @@ const About = () => {
                     height: "3px",
                   }}
                 >
-                  <div className="typing">
-                    <Typing
-                      bio="Lerom Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industy's standard dummy text ever since the 1500s,"
-                      speed={40}
-                    ></Typing>
+                  <div>
+                    <p style={{ color: "#7B7B7B" }}>
+                      - I’ m sophomore student in Computer Science at King
+                      Mongkut's University of Technology Thonburi (KMUTT)
+                    </p>
+                  </div>
+                  <div>
+                    <p style={{ color: "#7B7B7B" }}>
+                      - Minimal and simple are a passion of mine and I always
+                      enjoy and exited when I learn new thing.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div className="container">
+            {/* <div className="container">
               <div className="info">
                 <div className="container-card">
                   <h1 style={{ color: "#D18585" }}>Education</h1>
@@ -112,8 +128,8 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
             <Footer></Footer>
           </div>
         </Layout>
@@ -179,9 +195,10 @@ const About = () => {
         }
 
         .column-con {
+          margin-top: 70px;
           display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
+          justify-content: center;
+          align-items: center;
           flex-direction: column;
         }
         .row-con {

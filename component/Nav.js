@@ -32,15 +32,7 @@ const Nav = ({ page }) => {
           align-items: center;
           margin-right:20px
         }
-        .font{
-
-        }
-       
-        @media only screen and (max-width: 320px) {
-          .contact-text {
-            font-size: 5rem;
-          }
-        }
+    
       `}</style>
       
     </Fragment>
