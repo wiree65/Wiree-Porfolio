@@ -11,9 +11,7 @@ const Tying = ({}) => {
           width: 2em;
           margin: 0px;
           border-right: 2px solid rgba(255, 255, 255, 0.75);
-          // font-size: 180%;
           font-weight: 500;
-          // text-align: center;
           white-space: nowrap;
           overflow: hidden;
           // transform: translateY(-50%);
@@ -21,7 +19,7 @@ const Tying = ({}) => {
 
         .anim-typewriter {
           animation: typewriter 2s steps(40) 1s 1 normal both,
-            blinkTextCursor 300ms steps(40) infinite normal;
+            blinkTextCursor 500ms steps(40) infinite normal;
         }
 
         @keyframes typewriter {
