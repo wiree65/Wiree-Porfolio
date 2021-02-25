@@ -1,36 +1,20 @@
 import { Fragment, useState, useEffect } from "react";
 import Layout from "../component/Layout";
-import Typing from "../component/typing";
+import Skills from "../component/skills"
 import Footer from "../component/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSchool,
+  faCode,
+  faHospitalSymbol,
+} from "@fortawesome/free-solid-svg-icons";
 const About = () => {
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      function handleResize() {
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      }
-
-      window.addEventListener("resize", handleResize);
-
-      handleResize();
-
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, []);
-  const isMobile = windowSize.width < 768;
-
   return (
     <Fragment>
       <div style={{ marginTop: "20px" }}>
         <Layout page="about">
           <div className="motion">
-            <div className={` ${isMobile ? "container-mobile" : "container"}`}>
+            <div className="container">
               <img
                 src="/images/profile.png"
                 width="400px"
@@ -40,14 +24,14 @@ const About = () => {
               ></img>
               <div className="column-con">
                 <div>
-                  <div className={` ${isMobile ? "row-con" : ""}`}>
+                  <div>
                     <h1 className="text" style={{ margin: "0px" }}>
                       Hello,{" "}
                     </h1>
                     <div className="row-con">
                       <h1
                         className="text"
-                        style={{ margin: "15px 0px 0px 10px" }}
+                        style={{ margin: "15px 0px 0px 0px" }}
                       >
                         I’m{" "}
                       </h1>
@@ -56,11 +40,11 @@ const About = () => {
                         style={{
                           paddingLeft: "10px",
                           color: "#D18585",
-                          margin: "15px 0px 0px 10px",
+                          margin: "15px 0px 0px 0px",
                         }}
                       >
                         {" "}
-                        WIRAWAT JAIARREE
+                        Wirawat Jaiarree
                       </h1>
                     </div>
                   </div>
@@ -68,7 +52,7 @@ const About = () => {
                 <div
                   style={{
                     backgroundColor: "#D18585",
-                    width: "35vw",
+                    width: "460px",
                     height: "3px",
                   }}
                 >
@@ -92,7 +76,17 @@ const About = () => {
             <div className="container">
               <div className="info">
                 <div className="container-card">
-                  <h1 style={{ color: "#D18585" }}>Education</h1>
+                  <div className="row">
+                    <h1 style={{ color: "#D18585" }}>Education</h1>
+                    <FontAwesomeIcon
+                      icon={faSchool}
+                      style={{
+                        color: "#D18585",
+                        width: "40px",
+                        marginLeft: "15px",
+                      }}
+                    />
+                  </div>
                   <div className="card">
                     <p>Prommanusorn School 2012 - 2018</p>
                     <p>Math-Computer GPAX : 3.81</p>
@@ -107,9 +101,34 @@ const About = () => {
                   </div>
                 </div>
                 <div className="container-card">
-                  <h1 style={{ color: "#D18585" }}>Technology Skills</h1>
-                  <div className="card">
-                    test
+                  <div
+                    className="row"
+                    style={{ justifyContent: "center", alignItems: "center" }}
+                  >
+                    <h1 style={{ color: "#D18585" }}>Technology Skills</h1>
+                    <i
+                      className="fas fa-laptop-code"
+                      style={{
+                        color: "#D18585",
+                        fontSize: "2rem",
+                        marginLeft: "1rem",
+                      }}
+                    ></i>
+                  </div>
+                  <div
+                    className="card"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-start",
+                    }}
+                  >
+                    <div className="row">
+                      <h3 style={{ color: "#D18585" }}>Frontend</h3>
+                      <h3 style={{ marginLeft: "5px" }}>Development</h3>
+                    </div>
+                   <Skills/>
+                    
                   </div>
                 </div>
               </div>
@@ -118,19 +137,24 @@ const About = () => {
           </div>
         </Layout>
       </div>
-
       <style jsx>{`
+        .row {
+          display: flex;
+          flex-direction: row;
+        }
         .info {
           display: flex;
           flex-direction: row;
         }
 
         .card {
+          height: 100%;
           display: flex;
           justify-content: center;
           background: white;
           transition: 0.3s;
-          width: 30vw;
+          width: 500px;
+          padding: 50px;
           border-radius: 2vh;
           border: none;
           box-shadow: 3px 3px 5px 3px #ccc;
@@ -150,12 +174,6 @@ const About = () => {
           }
         }
 
-        . container-md {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-        }
         .container-card {
           min-height: 60vh;
           display: flex;
@@ -170,25 +188,18 @@ const About = () => {
           align-items: flex-start;
           flex-direction: row;
         }
-        .container-mobile {
-          min-height: 80vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
 
         .column-con {
-          margin-top: 70px;
+          margin-top: 60px;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: flex-start;
+          align-items: flex-start;
           flex-direction: column;
         }
         .row-con {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: flex-start;
+          align-items: flex-start;
           flex-direction: row;
         }
         .typing {
@@ -200,7 +211,7 @@ const About = () => {
           animation-duration: 4s;
         }
         .text {
-          font-size: 1vw;
+          font-size: 3rem;
         }
 
         @keyframes example {
@@ -218,46 +229,6 @@ const About = () => {
           }
           100% {
             opacity: 100%;
-          }
-        }
-        @media only screen and (max-width: 720px) {
-          .column-con {
-            display: flex;
-            width: 50vw;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          .column-con-md {
-            min-height: 20vh;
-            width: 50vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          .text {
-            font-size: 3vw;
-          }
-        }
-        @media only screen and (max-width: 1080px) {
-          .column-con {
-            display: flex;
-            width: 60vw;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          .column-con-md {
-            min-height: 20vh;
-            width: 50vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          .text {
-            font-size: 4vw;
           }
         }
       `}</style>

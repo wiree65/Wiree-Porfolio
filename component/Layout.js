@@ -32,7 +32,7 @@ const General = (props) => {
       <div className="container">
         {isMobile ? <Uppernav></Uppernav> : <Sidenav></Sidenav>}
         <div>
-          <main className="h-full">{props.children}</main>
+          <main>{props.children}</main>
         </div>
       </div>
       <style jsx>{`

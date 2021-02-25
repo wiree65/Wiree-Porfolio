@@ -78,7 +78,7 @@ const Home = () => {
                       <button className="button">
                         <span
                           style={{
-                            padding: "0 0 0 10px",
+                     
                             fontSize: "14px",
                             backgroundColor: "transparent",
                           }}

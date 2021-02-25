@@ -14,10 +14,6 @@ const Uppernav = ({ page }) => {
     { label: "Contact", link: "/contact", page: "contact" },
   ];
   const [toggleMenu, setToggleMenu] = useState(false);
-  const colors = {
-    secondary: "#444444",
-    contrast: "#ff88cc",
-  };
   return (
     <Fragment>
       <div className="container">

@@ -1,7 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
-import IndexMobile from './renderPage/indexMobile';
-import IndexWeb from './renderPage/indexWeb';
-
+import IndexMobile from "./renderPage/indexMobile";
+import IndexWeb from "./renderPage/indexWeb";
 
 const General = (props) => {
   const [windowSize, setWindowSize] = useState({
@@ -31,6 +30,7 @@ const General = (props) => {
       <div className="container">
         {isMobile ? <IndexMobile></IndexMobile> : <IndexWeb></IndexWeb>}
         <div>
+        <i class="fas fa-save"></i>
         </div>
       </div>
       <style jsx>{`
@@ -39,7 +39,6 @@ const General = (props) => {
           display: flex;
           flex-direction: column;
         }
-      
       `}</style>
     </Fragment>
   );
