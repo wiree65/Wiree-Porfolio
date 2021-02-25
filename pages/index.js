@@ -39,7 +39,7 @@ const Home = () => {
                 className="profilePic"
                 alt="profile picture"
               ></img>
-              <div className="column-con" style={{marginTop:'-100px'}}>
+              <div className="column-con" style={{ marginTop: "-100px" }}>
                 <div>
                   <div className={` ${isMobile ? "row-con" : ""}`}>
                     <h1 className="text" style={{ margin: "0px" }}>
@@ -56,12 +56,13 @@ const Home = () => {
                         className="text"
                         style={{
                           paddingLeft: "10px",
+                          fontSize: "3.8rem",
                           color: "#D18585",
-                          margin: "20px 0px 0px 10px",
+                          margin: "10px 0px 0px 0px",
                         }}
                       >
                         {" "}
-                        WIRAWAT JAIARREE
+                        <Typing></Typing>
                       </h1>
                     </div>
                   </div>
@@ -74,21 +75,29 @@ const Home = () => {
                   }}
                 >
                   <div className="typing">
-                    <Typing
-                      bio="Welcome to my online portfolio website"
-                      speed={40}
-                    ></Typing>
+                    <p style={{ fontWeight: "500", color: "#4F4F4F" }}>
+                      Welcome to my online portfolio website
+                    </p>
                   </div>
                   <div className="typing">
-                   <p style={{margin:'0px'}}>I’m freelance graphic, interactive design, and full stack development
-                     </p>
-                     
+                    <p style={{ margin: "0px", color: "#6D6D6D" }}>
+                      I’m freelance graphic, interactive design, and full stack
+                      development
+                    </p>
                   </div>
                   <div className="typing">
-                   <p tyle={{margin:'0px'}}>Just a frinedly note, you can call me
-                     </p>
-                     <p style={{margin:'0px', fontWeight:'600'}}>“Katak”
-                     </p>
+                    <p style={{ color: "#6D6D6D" }}>
+                      Just a frinedly note, you can call me
+                    </p>
+                    <p
+                      style={{
+                        margin: "0px",
+                        fontWeight: "600",
+                        color: "#6D6D6D",
+                      }}
+                    >
+                      “Katak”
+                    </p>
                   </div>
 
                   <div className="containerButon">
@@ -187,7 +196,7 @@ const Home = () => {
           flex-direction: row;
         }
         .container {
-          min-height:85vh;
+          min-height: 85vh;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -215,7 +224,7 @@ const Home = () => {
         }
         .typing {
           margin: 0px;
-          padding:0px;
+          padding: 0px;
           text-align: center;
           display: flex;
           justify-content: flex-start;
@@ -232,13 +241,13 @@ const Home = () => {
             opacity: 0%;
           }
           25% {
-            opacity: 40%;
-          }
-          50% {
             opacity: 60%;
           }
-          75% {
+          50% {
             opacity: 80%;
+          }
+          75% {
+            opacity: 90%;
           }
           100% {
             opacity: 100%;

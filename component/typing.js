@@ -1,36 +1,49 @@
-import { Fragment, useEffect, useState } from "react";
-const Typing = ({ bio, speed }) => {
-  let i = 0;
-  const [text, setText] = useState("");
-  const typeWriter = () => {
-    if (i < bio.length) {
-      setText(bio.slice(0, i + 1));
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  };
-  const getCursorStyle = () => {
-    if (text.length !== bio.length) {
-      return {
-        marginLeft: "-5px",
-        width: "5px",
-        height: "15px",
-        backgroundColor: "grey",
-      };
-    } else {
-      return {};
-    }
-  };
+import { Fragment } from "react";
 
-  useEffect(() => {
-    typeWriter();
-  }, []);
+const Tying = ({}) => {
   return (
     <Fragment>
-      <p style={{ display: "flex" ,fontWeight:'500'}}>{text}</p>
-      <div style={getCursorStyle()}></div>
+      <p className="line anim-typewriter">Wirawat Jaiarree</p>
+
+      <style jsx>{`
+        .line {
+          color: "#D18585";
+          width: 2em;
+          margin: 0px;
+          border-right: 2px solid rgba(255, 255, 255, 0.75);
+          // font-size: 180%;
+          font-weight: 500;
+          // text-align: center;
+          white-space: nowrap;
+          overflow: hidden;
+          // transform: translateY(-50%);
+        }
+
+        .anim-typewriter {
+          animation: typewriter 2s steps(40) 1s 1 normal both,
+            blinkTextCursor 300ms steps(40) infinite normal;
+        }
+
+        @keyframes typewriter {
+          from {
+            width: 0;
+          }
+          to {
+            width: 7.8em;
+          }
+        }
+
+        @keyframes blinkTextCursor {
+          from {
+            border-right-color: black;
+          }
+          to {
+            border-right-color: transparent;
+          }
+        }
+      `}</style>
     </Fragment>
   );
 };
 
-export default Typing;
+export default Tying;

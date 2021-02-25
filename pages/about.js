@@ -89,7 +89,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            {/* <div className="container">
+            <div className="container">
               <div className="info">
                 <div className="container-card">
                   <h1 style={{ color: "#D18585" }}>Education</h1>
@@ -107,29 +107,13 @@ const About = () => {
                   </div>
                 </div>
                 <div className="container-card">
-                  <h1 style={{ color: "#D18585" }}>Experiences</h1>
+                  <h1 style={{ color: "#D18585" }}>Technology Skills</h1>
                   <div className="card">
-                    <p>(CSC105 Web Application Development Project)</p>
-                    <p>Stack:</p>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexDirection: "column",
-                      }}
-                    >
-                      <p>- Front End Framework : VueJS</p>{" "}
-                      <p>- Back End Framework : Java Servle</p>{" "}
-                      <p>- CSS Framework : Vuetify</p>
-                      <p>- Tools : Gitlab, Github</p>
-                      <p>info:</p>
-                      <p>- Link : github.com/wiree65/staff</p>
-                      <p>- Site : csb.cscms.me/staff</p>
-                    </div>
+                    test
                   </div>
                 </div>
-              </div> */}
-            {/* </div> */}
+              </div>
+            </div>
             <Footer></Footer>
           </div>
         </Layout>
