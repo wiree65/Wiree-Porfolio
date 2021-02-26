@@ -8,7 +8,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 const Uppernav = ({ page }) => {
   const items = [
     { label: "Home", link: "/", page: "home" },
-    { label: "About me", link: "/about", page: "about" },
+    { label: "About", link: "/about", page: "about" },
     { label: "Experiences", link: "/experiences", page: "experiences" },
     { label: "Activities", link: "/activities", page: "activities" },
     { label: "Contact", link: "/contact", page: "contact" },
@@ -31,9 +31,9 @@ const Uppernav = ({ page }) => {
                   <div
                     className={`item ${item.page === page ? "active" : ""}`}
                     key={item.label}
-                    style={{ marginLeft: "32px",fontSize:'13px' }}
+                    style={{ marginLeft: "20px",fontSize:'13px' }}
                   >
-                    <Link href={item.link}>{item.label}</Link>
+                    <Link href={item.link}><p style={{fontSize:'12px'}}>{item.label}</p></Link>
                   </div>
                 </div>
               );
@@ -78,10 +78,9 @@ const Uppernav = ({ page }) => {
           align-items: center;
           margin-right: 20px;
         }
-        .font {
-        }
+       
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 768px) {
         }
       `}</style>
     </Fragment>
