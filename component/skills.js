@@ -94,7 +94,7 @@ const Skills = ({ id }) => {
               font-weight: 500;
             }
             .icon {
-              width: 28px;
+              width: 42.5px;
             }
             .column {
               margin: 10px;
