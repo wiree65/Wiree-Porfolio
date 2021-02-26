@@ -30,18 +30,16 @@ const General = (props) => {
     <Fragment>
       <Header></Header>
       <div className="container">
-        {isMobile ? <Uppernav></Uppernav> : <Sidenav></Sidenav>}
+        <Sidenav></Sidenav>
         <div>
           <main>{props.children}</main>
         </div>
       </div>
       <style jsx>{`
         .container {
-          
           display: flex;
           flex-direction: column;
         }
-      
       `}</style>
     </Fragment>
   );

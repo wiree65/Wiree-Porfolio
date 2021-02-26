@@ -6,7 +6,7 @@ import Footer from "../component/Footer";
 const About = () => {
   return (
     <Fragment>
-      <div style={{ marginTop: "20px" }}>
+      <div>
         <Layout page="about">
           <div className="motion">
             <div className="container">
@@ -37,7 +37,9 @@ const About = () => {
                   </div>
                 </div>
                 <div className="line">
-                  <div>
+                
+                </div>
+                <div>
                     <p style={{ color: "#7B7B7B" }}>
                       - I’ m sophomore student in Computer Science at King
                       Mongkut's University of Technology Thonburi (KMUTT)
@@ -49,7 +51,6 @@ const About = () => {
                       enjoy and exited when I learn new thing.
                     </p>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -57,7 +58,7 @@ const About = () => {
             <div className="container1">
               <div className="info">
                 <div className="container-card">
-                <div
+                  <div
                     className="row"
                     style={{ justifyContent: "center", alignItems: "center" }}
                   >
@@ -216,14 +217,13 @@ const About = () => {
         }
 
         .container-card {
-          min-height: 60vh;
           display: flex;
           margin-left: 100px;
           align-items: flex-start;
           flex-direction: column;
         }
         .container {
-          min-height: 50vh;
+          height: 100%;
           display: flex;
           justify-content: center;
           align-items: flex-start;
@@ -261,6 +261,7 @@ const About = () => {
         .text {
           font-size: 3rem;
           margin: 0px;
+          padding: 0px;
         }
 
         @keyframes example {
@@ -281,6 +282,13 @@ const About = () => {
           }
         }
         @media only screen and (max-width: 768px) {
+          .column-con {
+            margin:0px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+          }
           .info {
             display: flex;
             flex-direction: column;
@@ -290,13 +298,13 @@ const About = () => {
           }
           .text {
             text-align: center;
-            font-size: 2.3rem;
+            font-size: 2rem;
           }
           .container {
-            height: 90vh;
+            height: 100%;
             width: 100vw;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             flex-direction: column;
           }
@@ -308,13 +316,7 @@ const About = () => {
             align-items: center;
             flex-direction: column;
           }
-          .column-con {
-            margin-top: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
+         
           .line {
             background-color: #d18585;
             width: 350px;

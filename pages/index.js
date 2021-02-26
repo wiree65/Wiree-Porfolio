@@ -29,12 +29,11 @@ const General = (props) => {
     <Fragment>
       <div className="container">
         {isMobile ? <IndexMobile></IndexMobile> : <IndexWeb></IndexWeb>}
-        <div>
-        </div>
+        <div></div>
       </div>
       <style jsx>{`
         .container {
-          height: 60vh;
+          // height: 60vh;
           display: flex;
           flex-direction: column;
         }

@@ -5,11 +5,9 @@ import Footer from "../../component/Footer";
 import Link from "next/link";
 
 const Home = () => {
-
-
   return (
     <Fragment>
-      <div style={{ marginTop: "20px" }}>
+      <div>
         <Layout page="home">
           <div className="motion">
             <div className="container">
@@ -56,7 +54,8 @@ const Home = () => {
                   </div>
                   <div className="typing">
                     <p style={{ margin: "0px", color: "#6D6D6D" }}>
-                      I’m freelance graphic, interactive design, and a simple student
+                      I’m freelance graphic, interactive design, and a simple
+                      student
                     </p>
                   </div>
                   <div className="typing">
@@ -78,7 +77,6 @@ const Home = () => {
                       <button className="button">
                         <span
                           style={{
-                     
                             fontSize: "14px",
                             backgroundColor: "transparent",
                           }}
@@ -98,7 +96,6 @@ const Home = () => {
         </Layout>
         <Footer></Footer>
       </div>
-     
 
       <style jsx>{`
         .line {
@@ -139,7 +136,7 @@ const Home = () => {
           border: none;
           outline: none;
         }
-      
+
         .button:hover {
           transition: 0.5s;
           color: #d18585;
@@ -148,7 +145,7 @@ const Home = () => {
           opacity: 1;
           right: 1;
         }
-    
+
         .container {
           min-height: 85vh;
           display: flex;
@@ -201,8 +198,6 @@ const Home = () => {
             opacity: 100%;
           }
         }
-       
-      
       `}</style>
     </Fragment>
   );

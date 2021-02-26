@@ -16,7 +16,7 @@ const Skills = ({ id }) => {
   const dnt = [
     {
       icons: [
-        { title: "RDBMS", icon: "fas fa-database" },
+        { title: "MSSQL", icon: "fas fa-database" },
         { title: "Servlet", icon: "fab fa-java" },
         { title: "Node JS", icon: "fab fa-node-js" },
         { title: "Git & Github", icon: "fab fa-github-square" },
