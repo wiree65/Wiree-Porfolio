@@ -17,18 +17,20 @@ const Nav = ({ page }) => {
             <div
               className={`item ${item.page === page ? "active" : ""}`}
               key={item.label}
-              style={{ marginLeft: "30px",marginTop:'10px' }}
+              style={{ marginLeft: "30px", marginTop: "10px" }}
+              id="fontNav"
             >
               <Link href={item.link}>
-               
                 {item.label}
-            
-                </Link>
+              </Link>
             </div>
           );
         })}
       </div>
       <style jsx>{`
+      #fontNav{
+        font-size:100%;
+      }
         .container {
           display: flex;
           flex-direction: row;
@@ -42,7 +44,9 @@ const Nav = ({ page }) => {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-           
+          }
+          #fontNav{
+            font-size:70%;
           }
         }
       `}</style>
