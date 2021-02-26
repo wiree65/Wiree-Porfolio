@@ -1,6 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
 import Layout from "../component/Layout";
-import Skills from "../component/skills"
+import Skills from "../component/skills";
 import Footer from "../component/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -88,7 +88,7 @@ const About = () => {
                     />
                   </div>
                   <div className="card">
-                    <p>Prommanusorn School 2012 - 2018</p>
+                    <p>Prommanusorn School 2016 - 2018</p>
                     <p>Math-Computer GPAX : 3.81</p>
                   </div>
 
@@ -121,14 +121,41 @@ const About = () => {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "flex-start",
+                      height: "160px",
+                      padding: "0px",
                     }}
                   >
-                    <div className="row">
-                      <h3 style={{ color: "#D18585" }}>Frontend</h3>
-                      <h3 style={{ marginLeft: "5px" }}>Development</h3>
+                    <div className="row" style={{ paddingLeft: "20px" }}>
+                      <h3 style={{ color: "#D18585", marginTop: "10px" }}>
+                        Frontend
+                      </h3>
+                      <h3 style={{ marginLeft: "5px", marginTop: "10px" }}>
+                        Development
+                      </h3>
                     </div>
-                   <Skills/>
-                    
+                    <Skills id={'font'}></Skills>
+                    <br />
+                  </div>
+                  <br />
+                  <div
+                    className="card"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-start",
+                      height: "160px",
+                      padding: "0px",
+                    }}
+                  >
+                    <div className="row" style={{ paddingLeft: "20px" }}>
+                      <h3 style={{ color: "#D18585", marginTop: "10px" }}>
+                      Backend and Tools
+                      </h3>
+                      <h3 style={{ marginLeft: "5px", marginTop: "10px" }}>
+                        Development
+                      </h3>
+                    </div>
+                    <Skills id={'back'}/>
                   </div>
                 </div>
               </div>

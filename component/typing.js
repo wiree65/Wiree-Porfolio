@@ -14,7 +14,6 @@ const Tying = ({}) => {
           font-weight: 500;
           white-space: nowrap;
           overflow: hidden;
-          // transform: translateY(-50%);
         }
 
         .anim-typewriter {
