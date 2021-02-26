@@ -14,7 +14,7 @@ const About = () => {
               <div className="column-con">
                 <div>
                   <div>
-                    <h1 className="text">Hello</h1>
+                    <h1 className="text">Hello,</h1>
                     <div className="row-con">
                       <h1
                         className="text"

@@ -22,7 +22,7 @@ const Home = () => {
                 <div>
                   <div>
                     <h1 className="text" style={{ margin: "20px 0px 0px 0px" }}>
-                      Hello{"   "}
+                      Hello,{"   "}
                     </h1>
                     <div className="row-con">
                       <h1
