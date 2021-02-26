@@ -2,8 +2,7 @@ import { Fragment, useState, useEffect } from "react";
 import Layout from "../component/Layout";
 import Skills from "../component/skills";
 import Footer from "../component/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSchool } from "@fortawesome/free-solid-svg-icons";
+
 const About = () => {
   return (
     <Fragment>
@@ -58,16 +57,19 @@ const About = () => {
             <div className="container1">
               <div className="info">
                 <div className="container-card">
-                  <div className="row">
+                <div
+                    className="row"
+                    style={{ justifyContent: "center", alignItems: "center" }}
+                  >
                     <h1 style={{ color: "#D18585" }}>Education</h1>
-                    <FontAwesomeIcon
-                      icon={faSchool}
+                    <i
+                      className="fas fa-school"
                       style={{
                         color: "#D18585",
-                        width: "40px",
-                        marginLeft: "15px",
+                        fontSize: "2rem",
+                        marginLeft: "1rem",
                       }}
-                    />
+                    ></i>
                   </div>
                   <div className="card">
                     <p>Prommanusorn School 2016 - 2018</p>
