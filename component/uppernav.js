@@ -31,9 +31,9 @@ const Uppernav = ({ page }) => {
                   <div
                     className={`item ${item.page === page ? "active" : ""}`}
                     key={item.label}
-                    style={{ marginLeft: "20px",fontSize:'13px' }}
+                    style={{ marginLeft: "17px",fontSize:'13px' }}
                   >
-                    <Link href={item.link}><p style={{fontSize:'12px'}}>{item.label}</p></Link>
+                    <Link href={item.link}><p style={{fontSize:'11px'}}>{item.label}</p></Link>
                   </div>
                 </div>
               );

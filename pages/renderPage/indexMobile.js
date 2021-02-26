@@ -7,7 +7,7 @@ import Link from "next/link";
 const Home = () => {
   return (
     <Fragment>
-      <div >
+      <div>
         <Layout page="home">
           <div className="motion">
             <div className="container">
@@ -19,12 +19,11 @@ const Home = () => {
                 alt="profile picture"
               ></img>
               <h1 className="text" style={{ margin: "20px 0px 0px 0px" }}>
-                      Hello,{"   "}
-                    </h1>
+                Hello,{"   "}
+              </h1>
               <div className="column-con">
                 <div>
                   <div>
-                    
                     <div className="row-con">
                       <h1
                         className="text"
@@ -55,7 +54,8 @@ const Home = () => {
                   </div>
                   <div className="typing">
                     <p style={{ margin: "0px", color: "#6D6D6D" }}>
-                    I’m freelance graphic, interactive design, and a simple student
+                      I’m freelance graphic, interactive design, and a simple
+                      student
                     </p>
                   </div>
                   <div className="typing">
@@ -71,13 +71,12 @@ const Home = () => {
                       “Katak”
                     </p>
                   </div>
-             
+
                   <div className="containerButon">
                     <Link href="/about">
                       <button className="button">
                         <span
                           style={{
-                     
                             fontSize: "14px",
                             backgroundColor: "transparent",
                           }}
@@ -86,10 +85,8 @@ const Home = () => {
                         </span>
                       </button>
                     </Link>
-                    
                   </div>
-      <Footer></Footer>
-
+                  <Footer></Footer>
                 </div>
               </div>
             </div>
@@ -99,8 +96,8 @@ const Home = () => {
           </div>
         </Layout>
       </div>
-  
-      <br/>
+
+      <br />
       <style jsx>{`
         .line {
           background-color: #d18585;
@@ -123,7 +120,7 @@ const Home = () => {
           background-color: #d18585;
 
           width: 200px;
-          height: 5vh;
+          height: 40px;
           border-radius: 30px;
           color: white;
           display: flex;
