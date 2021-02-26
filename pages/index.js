@@ -30,7 +30,6 @@ const General = (props) => {
       <div className="container">
         {isMobile ? <IndexMobile></IndexMobile> : <IndexWeb></IndexWeb>}
         <div>
-        <i class="fas fa-save"></i>
         </div>
       </div>
       <style jsx>{`
