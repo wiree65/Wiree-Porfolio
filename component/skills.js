@@ -23,6 +23,17 @@ const Skills = ({ id }) => {
       ],
     },
   ];
+  const design = [
+    {
+      icons: [
+        { title: "Photoshop", icon: "fas fa-database" },
+        { title: "Illustrator", icon: "fab fa-java" },
+        { title: "Figma", icon: "fab fa-node-js" },
+        { title: "Git & Github", icon: "fab fa-github-square" },
+        { title: "Docker", icon: "fab fa-docker" },
+      ],
+    },
+  ];
   if (id == "font") {
     return (
       <Fragment>

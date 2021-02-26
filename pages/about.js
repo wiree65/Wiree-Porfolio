@@ -121,11 +121,14 @@ const About = () => {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "flex-start",
-                      height: "160px",
+                      height: "130px",
                       padding: "0px",
                     }}
                   >
-                    <div className="row" style={{ paddingLeft: "20px" }}>
+                    <div
+                      className="row"
+                      style={{ paddingLeft: "20px", height: "30px" }}
+                    >
                       <h3 style={{ color: "#D18585", marginTop: "10px" }}>
                         Frontend
                       </h3>
@@ -133,7 +136,7 @@ const About = () => {
                         Development
                       </h3>
                     </div>
-                    <Skills id={'font'}></Skills>
+                    <Skills id={"font"}></Skills>
                     <br />
                   </div>
                   <br />
@@ -143,19 +146,46 @@ const About = () => {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "flex-start",
-                      height: "160px",
+                      height: "130px",
                       padding: "0px",
                     }}
                   >
-                    <div className="row" style={{ paddingLeft: "20px" }}>
+                    <div
+                      className="row"
+                      style={{ paddingLeft: "20px", height: "30px" }}
+                    >
                       <h3 style={{ color: "#D18585", marginTop: "10px" }}>
-                      Backend and Tools
+                        Backend and Tools
                       </h3>
                       <h3 style={{ marginLeft: "5px", marginTop: "10px" }}>
                         Development
                       </h3>
                     </div>
-                    <Skills id={'back'}/>
+                    <Skills id={"back"} />
+                  </div>
+                  <br />
+                  <div
+                    className="card"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-start",
+                      height: "130px",
+                      padding: "0px",
+                    }}
+                  >
+                    <div
+                      className="row"
+                      style={{ paddingLeft: "20px", height: "30px" }}
+                    >
+                      <h3 style={{ color: "#D18585", marginTop: "10px" }}>
+                       Design
+                      </h3>
+                      <h3 style={{ marginLeft: "5px", marginTop: "10px" }}>
+                        Development
+                      </h3>
+                    </div>
+                    <Skills id={"back"} />
                   </div>
                 </div>
               </div>
