@@ -147,7 +147,7 @@ const Home = () => {
         }
 
         .container {
-          min-height: 85vh;
+          min-height: 86vh;
           display: flex;
           justify-content: center;
           align-items: center;

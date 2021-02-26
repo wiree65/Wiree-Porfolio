@@ -10,15 +10,23 @@ const About = () => {
         <Layout page="about">
           <div className="motion">
             <div className="container">
-              <img src="/images/profile.png" className="profilePic"></img>
+              <img
+                src="/images/profile.png"
+                width="400px"
+                height="auto"
+                className="profilePic"
+                alt="profile picture"
+              ></img>
               <div className="column-con">
                 <div>
                   <div>
-                    <h1 className="text">Hello,</h1>
+                    <h1 className="text" style={{ margin: "20px 0px 0px 0px" }}>
+                      Hello,{"   "}
+                    </h1>
                     <div className="row-con">
                       <h1
                         className="text"
-                        style={{ margin: "15px 0px 0px 0px" }}
+                        style={{ margin: "20px 0px 0px 0px" }}
                       >
                         I’m{" "}
                       </h1>
@@ -26,8 +34,9 @@ const About = () => {
                         className="text"
                         style={{
                           paddingLeft: "10px",
+
                           color: "#D18585",
-                          margin: "15px 0px 0px 0px",
+                          margin: "20px 0px 0px 0px",
                         }}
                       >
                         {" "}
@@ -36,21 +45,20 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className="line">
-                
+                <div className="line" style={{margin:'5px'}}></div>
+
+                <div className="typing">
+                  <p style={{ color: "#7B7B7B" }}>
+                    - I’ m sophomore student in Computer Science at King
+                    Mongkut's University of Technology Thonburi (KMUTT)
+                  </p>
                 </div>
-                <div>
-                    <p style={{ color: "#7B7B7B" }}>
-                      - I’ m sophomore student in Computer Science at King
-                      Mongkut's University of Technology Thonburi (KMUTT)
-                    </p>
-                  </div>
-                  <div>
-                    <p style={{ color: "#7B7B7B" }}>
-                      - Minimal and simple are a passion of mine and I always
-                      enjoy and exited when I learn new thing.
-                    </p>
-                  </div>
+                <div className="typing">
+                  <p style={{ color: "#7B7B7B" }}>
+                    - Minimal and simple are a passion of mine and I always
+                    enjoy and exited when I learn new thing.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -161,7 +169,7 @@ const About = () => {
       <style jsx>{`
         .line {
           background-color: #d18585;
-          width: 460px;
+          width: 100%;
           height: 3px;
         }
         .profilePic {
@@ -251,15 +259,13 @@ const About = () => {
           flex-direction: row;
         }
         .typing {
-          text-align: center;
+          width: 550px;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          animation-name: example;
-          animation-duration: 4s;
+          justify-content: flex-start;
+          align-items: flex-start;
         }
         .text {
-          font-size: 3rem;
+          font-size: 3.6rem;
           margin: 0px;
           padding: 0px;
         }
@@ -282,8 +288,14 @@ const About = () => {
           }
         }
         @media only screen and (max-width: 768px) {
+          .typing {
+            width: 300px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
           .column-con {
-            margin:0px;
+            margin: 0px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -316,10 +328,10 @@ const About = () => {
             align-items: center;
             flex-direction: column;
           }
-         
+
           .line {
             background-color: #d18585;
-            width: 350px;
+            width: 100%;
             height: 3px;
           }
 
