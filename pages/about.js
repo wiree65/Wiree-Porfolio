@@ -301,7 +301,7 @@ const About = () => {
             flex-direction: column;
           }
           .container1 {
-            height: 135vh;
+            height: 100%;
             width: 100vw;
             display: flex;
             justify-content: flex-start;
