@@ -45,7 +45,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className="line" style={{margin:'5px'}}></div>
+                <div className="line" style={{ margin: "5px" }}></div>
 
                 <div className="typing">
                   <p style={{ color: "#7B7B7B" }}>
@@ -129,7 +129,7 @@ const About = () => {
                   <div className="card1">
                     <div className="row" style={{ paddingLeft: "20px" }}>
                       <h3 style={{ color: "#D18585", margin: "0px" }}>
-                        DB, Backend and Tools
+                        Backend and Tools
                       </h3>
                       <h3
                         style={{
@@ -181,6 +181,7 @@ const About = () => {
           flex-direction: row;
         }
         .info {
+          margin-left: -30px;
           display: flex;
           flex-direction: row;
         }
@@ -204,7 +205,7 @@ const About = () => {
 
           background: white;
           transition: 0.3s;
-          width: 500px;
+          width: 450px;
           padding: 10px;
           border-radius: 2vh;
           border: none;
@@ -302,8 +303,11 @@ const About = () => {
             flex-direction: column;
           }
           .info {
+            margin-left:0px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
           }
           .profilePic {
             width: 300px;
@@ -336,11 +340,12 @@ const About = () => {
           }
 
           .container-card {
+            width:95%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 0;
+            margin: 0px;
           }
           .card {
             display: flex;
@@ -348,7 +353,7 @@ const About = () => {
             justify-content: center;
             background: white;
             transition: 0.3s;
-            width: 90%;
+            width: 100%;
             border-radius: 2vh;
             border: none;
             box-shadow: 3px 3px 5px 3px #ccc;
@@ -357,12 +362,13 @@ const About = () => {
           }
           p {
             padding: 0px;
+            font-size:0.8rem;
             margin: 5px;
             text-align: center;
           }
           .card1 {
             height: 90%;
-            width: 95%;
+            width: 100%;
             display: flex;
             justify-content: flex-start;
             background: white;
