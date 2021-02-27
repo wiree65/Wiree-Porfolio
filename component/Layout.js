@@ -30,7 +30,7 @@ const General = (props) => {
     <Fragment>
       <Header></Header>
       <div className="container">
-        <Sidenav></Sidenav>
+        <Sidenav page={props.page}></Sidenav>
         <div>
           <main>{props.children}</main>
         </div>

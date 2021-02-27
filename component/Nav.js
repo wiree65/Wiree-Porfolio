@@ -20,17 +20,22 @@ const Nav = ({ page }) => {
               style={{ marginLeft: "30px", marginTop: "10px" }}
               id="fontNav"
             >
-              <Link href={item.link}>
-                {item.label}
-              </Link>
+              <Link href={item.link}>{item.label}</Link>
             </div>
           );
         })}
       </div>
       <style jsx>{`
-      #fontNav{
-        font-size:100%;
-      }
+        .active {
+          font-weight: 600;
+          transition: 1s;
+          color: #d18585;
+          border-bottom: 2px solid #d18585;
+        }
+
+        #fontNav {
+          font-size: 100%;
+        }
         .container {
           display: flex;
           flex-direction: row;
@@ -45,8 +50,8 @@ const Nav = ({ page }) => {
             justify-content: center;
             align-items: center;
           }
-          #fontNav{
-            font-size:70%;
+          #fontNav {
+            font-size: 70%;
           }
         }
       `}</style>

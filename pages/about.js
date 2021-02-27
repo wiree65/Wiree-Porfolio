@@ -226,7 +226,7 @@ const About = () => {
 
         .container-card {
           display: flex;
-          margin-left: 100px;
+          margin-left: 3%;
           align-items: flex-start;
           flex-direction: column;
         }
@@ -238,7 +238,7 @@ const About = () => {
           flex-direction: row;
         }
         .container1 {
-          min-height: 50vh;
+          min-height: 100%;
           display: flex;
           justify-content: center;
           align-items: flex-start;
@@ -287,7 +287,7 @@ const About = () => {
             opacity: 100%;
           }
         }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1024px) {
           .typing {
             width: 300px;
             display: flex;
@@ -348,7 +348,7 @@ const About = () => {
             justify-content: center;
             background: white;
             transition: 0.3s;
-            width: 350px;
+            width: 90%;
             border-radius: 2vh;
             border: none;
             box-shadow: 3px 3px 5px 3px #ccc;
@@ -361,8 +361,8 @@ const About = () => {
             text-align: center;
           }
           .card1 {
-            height: 110px;
-            width: 350px;
+            height: 90%;
+            width: 95%;
             display: flex;
             justify-content: flex-start;
             background: white;
