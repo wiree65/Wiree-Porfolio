@@ -181,7 +181,7 @@ const About = () => {
           flex-direction: row;
         }
         .info {
-          margin-left: -30px;
+          margin-left: -80px;
           display: flex;
           flex-direction: row;
         }
@@ -288,7 +288,7 @@ const About = () => {
             opacity: 100%;
           }
         }
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: 768px) {
           .typing {
             width: 300px;
             display: flex;
