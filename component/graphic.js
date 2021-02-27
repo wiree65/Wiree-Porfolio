@@ -2,8 +2,12 @@ import { Fragment, useState, useEffect } from "react";
 const Graphic = (props) => {
   const skills = [
     {
-      icons: [{ title: "Burger Joker" }, { title: "Yum yod chai" },{ title: "Burger Joker" }, { title: "Yum yod chai" }
-    ,{ title: "Burger Joker" }, { title: "Yum yod chai" },{ title: "Burger Joker" }, { title: "Yum yod chai" }],
+      icons: [
+        { title: "Burger Joker" },
+        { title: "Yum Yod Chai" },
+        { title: "CS@SIT Open House" },
+
+      ],
     },
   ];
   return (
