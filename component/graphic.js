@@ -6,6 +6,10 @@ const Graphic = (props) => {
         { title: "Burger Joker" },
         { title: "Yum Yod Chai" },
         { title: "CS@SIT Open House" },
+        { title: "GEN351 Poster" },
+        { title: "Animation 2D" },
+
+
 
       ],
     },
