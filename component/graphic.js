@@ -2,7 +2,8 @@ import { Fragment, useState, useEffect } from "react";
 const Graphic = (props) => {
   const skills = [
     {
-      icons: [{ title: "Burger Joker" }, { title: "Yum yod chai" }],
+      icons: [{ title: "Burger Joker" }, { title: "Yum yod chai" },{ title: "Burger Joker" }, { title: "Yum yod chai" }
+    ,{ title: "Burger Joker" }, { title: "Yum yod chai" },{ title: "Burger Joker" }, { title: "Yum yod chai" }],
     },
   ];
   return (
@@ -28,8 +29,11 @@ const Graphic = (props) => {
       </div>
 
       <style jsx>{`
+     
         .row {
+          flex-wrap: wrap;
           display: flex;
+          justify-content: center;
           flex-direction: row;
         }
         .card {
@@ -43,6 +47,7 @@ const Graphic = (props) => {
           border: none;
           box-shadow: 3px 3px 5px 3px #ccc;
           flex-direction: column;
+          animation: mymove 1s;
         }
         .container {
           height: 90vh;
@@ -52,6 +57,16 @@ const Graphic = (props) => {
           align-items: center;
           flex-direction: column;
         }
+        @keyframes mymove {
+            from {
+             width: 100px;
+             margin:
+            }
+            to {
+                width: 200px;
+
+            }
+          }
       `}</style>
     </Fragment>
   );
