@@ -5,7 +5,7 @@ import Graphic from "../component/graphic";
 import Layout from "../component/Layout";
 
 const General = (props) => {
-  const [current, setCurrent] = useState(2);
+  const [current, setCurrent] = useState(1);
   const renderPage = () => {
     switch (current) {
       case 1:
@@ -30,9 +30,10 @@ const General = (props) => {
             {items.map((item) => {
               return (
                 <div
-                  // className={`item ${item.page === page ? "active" : ""}`}
+                  className={`item ${item.page === current ? "active" : ""}`}
                   key={item.label}
                 >
+                  <br/>
                   <button
                     onClick={() => {
                       setCurrent(item.page)
@@ -44,10 +45,16 @@ const General = (props) => {
               );
             })}
           </div>
+          <br/>
           <div className="card">{renderPage()}</div>
         </div>
       </Layout>
       <style jsx>{`
+       .active {
+        font-weight: 600;
+        color: #d18585;
+        border-bottom: 3px solid #d18585;
+      }
         button {
           border: none;
           background-color: white;
@@ -68,7 +75,6 @@ const General = (props) => {
         .container {
           height: 90vh;
           text-align: center;
-
           width: 100vw;
           display: flex;
           justify-content: flex-start;
