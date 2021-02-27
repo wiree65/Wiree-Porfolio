@@ -2,7 +2,12 @@ import { Fragment, useState, useEffect } from "react";
 const Web = (props) => {
   const skills = [
     {
-      icons: [{ title: "EDUROOM" }, { title: "CSB" },{ title: "EDUROOM" }, { title: "CSB" }],
+      icons: [
+        { title: "EDUROOM" },
+        { title: "CSB" },
+        { title: "EDUROOM" },
+        { title: "CSB" },
+      ],
     },
   ];
   return (
@@ -28,10 +33,12 @@ const Web = (props) => {
       </div>
 
       <style jsx>{`
-     
         .row {
+          flex-wrap: wrap;
           display: flex;
+          justify-content: center;
           flex-direction: row;
+         
         }
         .card {
           display: flex;
@@ -39,12 +46,12 @@ const Web = (props) => {
           background: white;
           transition: 0.3s;
           width: 200px;
-          margin:20px;  
+          margin: 20px;
           border-radius: 2vh;
           border: none;
           box-shadow: 3px 3px 5px 3px #ccc;
           flex-direction: column;
-          animation: mymove 1s;
+          
         }
         .container {
           height: 90vh;
@@ -54,15 +61,7 @@ const Web = (props) => {
           align-items: center;
           flex-direction: column;
         }
-        @keyframes mymove {
-            from {
-             width: 100px;
-            }
-            to {
-                width: 200px;
-
-            }
-          }
+      
       `}</style>
     </Fragment>
   );
