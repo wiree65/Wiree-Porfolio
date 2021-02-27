@@ -51,6 +51,7 @@ const General = (props) => {
         button {
           border: none;
           background-color: white;
+          outline:none;
         }
         .row {
           display: flex;
