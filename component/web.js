@@ -5,18 +5,20 @@ const Web = (props) => {
       icons: [
         {
           title: "EDUROOM",
+          year: "2020",
           img: "./images/project/eduroom/1.png",
           front: "Front End Framework : NextJS",
           back: "Back End Framework : NodeJS",
           socket: "Real Time: SocketIO",
-          db: "Database : PostgreSQL",
+          db: "PostgreSQL",
           link: " Link : github.com/cs20-sit/eduroom",
           css: "CSS Framework : MaterialUI",
-          link: " Link : github.com/cs20-sit/eduroom",
           site: " site : https://eduroom.cscms.me",
         },
         {
           title: "CSB",
+          year: "2019",
+
           img: "./images/project/eduroom/2.png",
           front: "Front End Framework : VueJS",
           back: "Back End Framework : Java Servlet",
@@ -24,6 +26,7 @@ const Web = (props) => {
           db: "Database : Microsoft SQL",
           link: " Link : github.com/wiree65/staff",
           css: "CSS Framework : Vuetify",
+          site: "",
         },
       ],
     },
@@ -45,7 +48,7 @@ const Web = (props) => {
                         ></img>
 
                         <h3 className="font">{s.title}</h3>
-                        <p>2020</p>
+                        <p>{s.year}</p>
                         <br />
                         <div className="hoverdiv">
                           <div className="content">
