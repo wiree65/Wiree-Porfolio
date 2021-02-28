@@ -1,4 +1,5 @@
 import { Fragment, useState, useEffect } from "react";
+import style from "../styles/skills";
 
 const Skills = ({ id }) => {
   const skills = [
@@ -60,51 +61,7 @@ const Skills = ({ id }) => {
             ))}
           </div>
         </div>
-        <style jsx>{`
-          i {
-            color: #d18585;
-            font-size: 35px;
-          }
-          .icon {
-            width: 60px;
-          }
-          .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .column {
-            margin: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          .font {
-            font-size: 13px;
-            font-weight: 500;
-          }
-          @media only screen and (max-width: 768px) {
-            i {
-              color: #d18585;
-              font-size: 25px;
-            }
-            .font {
-              font-size: 10px;
-              font-weight: 500;
-            }
-            .icon {
-              width: 42.5px;
-            }
-            .column {
-              margin: 10px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            }
-          }
-        `}</style>
+        <style jsx>{style}</style>
       </Fragment>
     );
   }
@@ -130,52 +87,8 @@ const Skills = ({ id }) => {
             ))}
           </div>
         </div>
-        <style jsx>{`
-          i {
-            color: #d18585;
-            font-size: 30px;
-          }
-          .icon {
-            width: 50px;
-          }
-          .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .column {
-            margin: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          .font {
-            font-size: 13px;
-            font-weight: 500;
-            text-align:center;
-          }
-          @media only screen and (max-width: 768px) {
-            i {
-              color: #d18585;
-              font-size: 25px;
-            }
-            .font {
-              font-size: 10px;
-              font-weight: 500;
-            }
-            .icon {
-              width: 28px;
-            }
-            .column {
-              margin: 10px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            }
-          }
-        `}</style>
+        <style jsx>{style}</style>
+
       </Fragment>
     );
   }
@@ -207,51 +120,7 @@ const Skills = ({ id }) => {
             ))}
           </div>
         </div>
-        <style jsx>{`
-          i {
-            color: #d18585;
-            font-size: 30px;
-          }
-          .icon {
-            width: 40px;
-          }
-          .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .column {
-            margin: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          .font {
-            font-size: 13px;
-            font-weight: 500;
-          }
-          @media only screen and (max-width: 768px) {
-            i {
-              color: #d18585;
-              font-size: 25px;
-            }
-            .font {
-              font-size: 10px;
-              font-weight: 500;
-            }
-            .icon {
-              width: 28px;
-            }
-            .column {
-              margin: 10px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            }
-          }
-        `}</style>
+        <style jsx>{style}</style>
       </Fragment>
     );
   }

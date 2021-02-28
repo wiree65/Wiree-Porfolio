@@ -51,7 +51,7 @@ const General = (props) => {
       </Layout>
       <style jsx>{`
        .active {
-        font-weight: 600;
+        font-weight: 800;
         color: #d18585;
         border-bottom: 3px solid #d18585;
       }
