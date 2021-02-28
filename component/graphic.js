@@ -91,7 +91,6 @@ const Web = (props) => {
         }
 
         .container1 {
-          height: 90vh;
           width: 100vw;
           display: flex;
           justify-content: flex-start;

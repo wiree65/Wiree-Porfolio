@@ -5,8 +5,6 @@ const Web = (props) => {
       icons: [
         { title: "EDUROOM" },
         { title: "CSB" },
-        { title: "EDUROOM" },
-        { title: "CSB" },
       ],
     },
   ];
@@ -90,7 +88,7 @@ const Web = (props) => {
         }
 
         .container1 {
-          height: 90vh;
+
           width: 100vw;
           display: flex;
           justify-content: flex-start;
