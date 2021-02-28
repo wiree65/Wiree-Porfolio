@@ -15,7 +15,7 @@ const Nav = ({ page }) => {
         {items.map((item) => {
           return (
             <div
-              className={`item ${item.page === page ? "active" : ""}`}
+              className={`item ${item.page === page ? "active" : "nonactive"}`}
               key={item.label}
               style={{ marginLeft: "30px", marginTop: "10px" }}
               id="fontNav"
@@ -26,6 +26,14 @@ const Nav = ({ page }) => {
         })}
       </div>
       <style jsx>{`
+       .nonactive {
+      
+      }
+      .nonactive:hover {
+        border-bottom: 2px solid #d18585;
+        transition: 0.1s;
+        opacity: 0.8;
+      }
         .active {
           font-weight: 600;
           transition: 1s;
