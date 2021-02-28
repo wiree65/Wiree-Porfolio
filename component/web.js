@@ -21,7 +21,7 @@ const Web = (props) => {
                             src={`${s.img}`}
                             style={{ width: "100%", borderRadius: "32px" }}
                           ></img>
-                     
+                     <hr style={{backgroundColor:'#efefef'}}/>
                         <h3 className="font">{s.title}</h3>
                         <p>2020</p>
                         <div className="hoverdiv">
