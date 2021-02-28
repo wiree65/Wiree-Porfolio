@@ -60,7 +60,7 @@ const Web = (props) => {
                             <p>{s.css}</p>
                             <div>
                               <a
-                                href="https:github.com/cs20-sit/eduroom/"
+                                href="https://github.com/cs20-sit/eduroom/"
                                 className="link"
                               >
                                 {s.link}
@@ -68,7 +68,7 @@ const Web = (props) => {
                             </div>
                             <div>
                               <a
-                                href="https:github.com/cs20-sit/eduroom/"
+                                href="https://github.com/cs20-sit/eduroom/"
                                 className="link"
                               >
                                 {s.site}
