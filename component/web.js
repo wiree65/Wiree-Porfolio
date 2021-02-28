@@ -87,7 +87,7 @@ const Web = (props) => {
         }
 
         .container1 {
-          width: 100vw;
+          // width: 100vw;
           display: flex;
           justify-content: flex-start;
           align-items: center;

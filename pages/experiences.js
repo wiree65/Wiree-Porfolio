@@ -86,7 +86,7 @@ const General = (props) => {
         .container {
 
           text-align: center;
-          width: 100vw;
+
           display: flex;
           justify-content: flex-start;
           align-items: center;
