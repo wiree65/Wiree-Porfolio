@@ -153,6 +153,7 @@ const Skills = ({ id }) => {
           .font {
             font-size: 13px;
             font-weight: 500;
+            text-align:center;
           }
           @media only screen and (max-width: 768px) {
             i {
