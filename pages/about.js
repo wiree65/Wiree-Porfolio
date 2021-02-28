@@ -49,14 +49,14 @@ const About = () => {
 
                 <div className="typing">
                   <p style={{ color: "#7B7B7B" }}>
-                    - I’ m sophomore student in Computer Science at King
+                    - I’ m a sophomore student in Computer Science at King
                     Mongkut's University of Technology Thonburi (KMUTT)
                   </p>
                 </div>
                 <div className="typing">
                   <p style={{ color: "#7B7B7B" }}>
                     - Minimal and simple are a passion of mine and I always
-                    enjoy and exited when I learn new thing.
+                    enjoy and excited when I learn new things.
                   </p>
                 </div>
               </div>
