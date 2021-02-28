@@ -29,7 +29,7 @@ const Web = (props) => {
 
                         <h3 className="font">{s.title}</h3>
                         <p>2020</p>
-
+<br/>
                         <div className="hoverdiv">
                           <h1 className="font">{s.title}</h1>
                           <p>
@@ -53,7 +53,6 @@ const Web = (props) => {
         .container {
           width: 320px;
           box-shadow: 3px 3px 5px 3px #ccc;
-          height: 320px;
           margin: 20px;
           border-radius: 32px;
           transform: scale(1);
@@ -62,6 +61,10 @@ const Web = (props) => {
         }
 
         .hoverdiv {
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          // flex-direction:column
           position: absolute;
           top: 0;
           left: 0;
