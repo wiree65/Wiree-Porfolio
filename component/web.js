@@ -2,10 +2,7 @@ import { Fragment, useState, useEffect } from "react";
 const Web = (props) => {
   const skills = [
     {
-      icons: [
-        { title: "EDUROOM" },
-        { title: "CSB" },
-      ],
+      icons: [{ title: "EDUROOM" ,img:'./images/project/eduroom/1.png'}, { title: "CSB",img:'./images/project/eduroom/2.png' }],
     },
   ];
   return (
@@ -19,10 +16,12 @@ const Web = (props) => {
                   <div key={i}>
                     <div className="row">
                       <div className="container">
-                        <img
-                          src="./images/project/eduroom/1.png"
-                          style={{ width: "100%", borderRadius: "32px" }}
-                        ></img>
+                       
+                          <img
+                            src={`${s.img}`}
+                            style={{ width: "100%", borderRadius: "32px" }}
+                          ></img>
+                     
                         <h3 className="font">{s.title}</h3>
                         <p>2020</p>
                         <div className="hoverdiv">
@@ -88,7 +87,6 @@ const Web = (props) => {
         }
 
         .container1 {
-
           width: 100vw;
           display: flex;
           justify-content: flex-start;

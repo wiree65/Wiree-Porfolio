@@ -26,8 +26,10 @@ const Web = (props) => {
                           src="./images/project/eduroom/1.png"
                           style={{ width: "100%", borderRadius: "32px" }}
                         ></img>
+
                         <h3 className="font">{s.title}</h3>
-                  <p>2020</p>
+                        <p>2020</p>
+
                         <div className="hoverdiv">
                           <h1 className="font">{s.title}</h1>
                           <p>
