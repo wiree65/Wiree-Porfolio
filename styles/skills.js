@@ -4,6 +4,9 @@ i {
     color: #d18585;
     font-size: 35px;
   }
+  .icon1 {
+    width: 57px;
+  }
   .icon {
     width: 40px;
   }
@@ -34,6 +37,9 @@ i {
       font-weight: 500;
     }
     .icon {
+      width: 42.5px;
+    }
+    .icon1 {
       width: 42.5px;
     }
     .column {

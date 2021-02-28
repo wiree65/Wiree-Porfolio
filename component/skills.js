@@ -47,7 +47,7 @@ const Skills = ({ id }) => {
                     <div>
                       <div className="column" key={i}>
                         {s.icon.substring(0, 1) == "/" ? (
-                          <img src={`${s.icon}`} className="icon"></img>
+                          <img src={`${s.icon}`} className="icon1"></img>
                         ) : (
                           <i className={`fab fa-${s.icon}`}></i>
                         )}

@@ -30,11 +30,11 @@ const General = (props) => {
             {items.map((item) => {
               return (
                 <div
-                  className={`item ${item.page === current ? "active" : ""}`}
+                
                   key={item.label}
                 >
                   <br/>
-                  <button
+                  <button  className={`item ${item.page === current ? "active" : "nonactive"}`}
                     onClick={() => {
                       setCurrent(item.page)
                     }}
@@ -50,8 +50,17 @@ const General = (props) => {
         </div>
       </Layout>
       <style jsx>{`
+       .nonactive {
+        margin:10px;
+      }
+      .nonactive:hover {
+        border-bottom: 3px solid #d18585;
+        transition: 0.1s;
+        opacity: 0.8;
+      }
        .active {
-        font-weight: 800;
+        margin:10px;
+        font-weight: 700;
         color: #d18585;
         border-bottom: 3px solid #d18585;
       }
