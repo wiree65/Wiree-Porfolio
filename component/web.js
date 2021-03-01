@@ -1,9 +1,17 @@
 import { Fragment, useState, useEffect } from "react";
 const Web = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+
   const skills = [
     {
       icons: [
         {
+          intro:'Eduroom is a project in Integrated Project',
+          content:" It is an online learning platform that consists of many different systems such as Course, Forum, Learning Path, Message, etc ",
           title: "EDUROOM",
           year: "2020",
           img: "./images/project/eduroom/1.png",
@@ -52,29 +60,24 @@ const Web = (props) => {
                         <br />
                         <div className="hoverdiv">
                           <div className="content">
-                            <h1 className="font">{s.title}</h1>
-                            <p>{s.front}</p>
-                            <p>{s.back}</p>
-                            <p>{s.db}</p>
-                            <p>{s.socket}</p>
-                            <p>{s.css}</p>
-                            <div>
-                              <a
-                                href="https://github.com/cs20-sit/eduroom/"
-                                className="link"
-                              >
-                                {s.link}
-                              </a>
-                            </div>
-                            <div>
-                              <a
-                                href="https://github.com/cs20-sit/eduroom/"
-                                className="link"
-                              >
-                                {s.site}
-                              </a>
-                            </div>
+                            <h1>{s.title}</h1>
+
+                            <h5>  {s.intro}</h5>
+                            <p>
+                           {s.content}
+                              
+                            </p>
                           </div>
+                          <button className="button">
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                backgroundColor: "transparent",
+                              }}
+                            >
+                              see more information
+                            </span>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -87,13 +90,42 @@ const Web = (props) => {
       </div>
 
       <style jsx>{`
+        h1 {
+          color: #333333;
+        }
+        h5 {
+          color: #6d6d6d;
+        }
+        .p {
+        }
+        .button {
+          postion: absolute;
+          background-color: #d18585;
+          width: 200px;
+          height: 40px;
+          border-radius: 30px;
+          color: white;
+          // margin: 10px;
+          border: none;
+          outline: none;
+        }
+        .button:hover {
+          transition: 0.5s;
+          color: #d18585;
+          border: solid;
+          background-color: white;
+          opacity: 1;
+          right: 1;
+        }
         p {
+          color: #6d6d6d;
+
           padding: 0;
           margin: 10px;
         }
         .content {
           margin: 0;
-          padding: 0;
+          padding: 5px;
         }
         .link {
           color: #d18585;

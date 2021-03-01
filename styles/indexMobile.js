@@ -19,7 +19,6 @@ export default css`
 
   .button {
     background-color: #d18585;
-
     width: 200px;
     height: 40px;
     border-radius: 30px;

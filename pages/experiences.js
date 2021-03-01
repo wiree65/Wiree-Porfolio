@@ -49,7 +49,7 @@ const General = (props) => {
           <br />
           <div className="card">{renderPage()}</div>
         </div>
-        <Footer/>
+        <Footer />
       </Layout>
       <style jsx>{`
         .nonactive {
@@ -84,7 +84,6 @@ const General = (props) => {
           padding-right: 10px;
         }
         .container {
-
           text-align: center;
 
           display: flex;

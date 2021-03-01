@@ -11,13 +11,10 @@ const About = () => {
         <Layout page="about">
           <div className="motion">
             <div className="container">
-              <img
-                src="/images/profile.png"
-                width="400px"
-                height="auto"
+              <div
                 className="profilePic"
-                alt="profile picture"
-              ></img>
+               
+              ></div>
               <div className="column-con">
                 <div>
                   <div>

@@ -61,7 +61,7 @@ const Home = () => {
                   </div>
                   <div className="typing">
                     <p style={{ color: "#6D6D6D" }}>
-                      Just a frinedly note, you can call me
+                      Just a friendly note, you can call me
                     </p>
                     <p
                       style={{
