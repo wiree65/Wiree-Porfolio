@@ -173,7 +173,8 @@ export default css`
       align-items: center;
     }
     .profilePic {
-      width: 300px;
+      width: 250px;
+      height: 250px;
     }
     .text {
       text-align: center;
