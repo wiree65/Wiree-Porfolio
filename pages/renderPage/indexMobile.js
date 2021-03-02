@@ -14,7 +14,7 @@ const Home = () => {
             <div className="container">
               <img
                 src="/images/profile.png"
-                width="300px"
+                width="350px"
                 height="auto"
                 className="profilePic"
                 alt="profile picture"

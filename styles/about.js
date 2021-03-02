@@ -1,13 +1,13 @@
 import css from "styled-jsx/css";
 export default css`
   .profilePic {
-    background-image: url(./images/1.jpg);
+    // background-image: url(./images/1.jpg);
     // background-size: 100% 100%;
     border-radius: 50%;
-    trainsition: 5s;
-    width: 350px;
-    height: 350px;
-    margin: 30px;
+    // trainsition: 5s;
+    // width: 350px;
+    // height: 350px;
+    // margin: 30px;
     // animation: profile 10s infinite;
   }
   @keyframes profile {
@@ -167,8 +167,9 @@ export default css`
       align-items: center;
     }
     .profilePic {
-      width: 250px;
-      height: 250px;
+      // margin:30px;
+      width: 350px;
+      height:auto;
     }
     .text {
       text-align: center;

@@ -13,12 +13,25 @@ const Nav = ({ handleClickOpen, open }) => {
   function Example(props) {
     var items = [
       {
-        name: "Random Name #1",
-        description: "Probably the most random thing you have ever seen!",
+        image: "./images/project/eduroom/imageE/1.png",
       },
       {
-        name: "Random Name #2",
-        description: "Hello World!",
+        image: "./images/project/eduroom/imageE/2.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/3.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/4.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/5.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/6.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/7.png",
       },
     ];
 
@@ -34,10 +47,7 @@ const Nav = ({ handleClickOpen, open }) => {
   function Item(props) {
     return (
       <Paper>
-        <h2>{props.item.name}</h2>
-        <p>{props.item.description}</p>
-
-        <Button className="CheckButton">Check it out!</Button>
+        <img src={`${props.item.image}`}style={{width:'100%'}}>{}</img>
       </Paper>
     );
   }
