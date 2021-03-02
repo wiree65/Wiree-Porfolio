@@ -2,35 +2,29 @@ import css from "styled-jsx/css";
 export default css`
   .profilePic {
     background-image: url(./images/1.jpg);
-    background-size: cover;
+    // background-size: 100% 100%;
     border-radius: 50%;
     trainsition: 5s;
-
     width: 350px;
     height: 350px;
     margin: 30px;
-    animation: profile 10s infinite;
+    // animation: profile 10s infinite;
   }
   @keyframes profile {
     0% {
       background-image: url(./images/1.jpg);
-      border-radius: 50%;
     }
     25% {
       background-image: url(./images/2.jpg);
-      border-radius: 50%;
     }
     50% {
       background-image: url(./images/3.jpg);
-      border-radius: 50%;
     }
     75% {
       background-image: url(./images/4.jpg);
-      border-radius: 50%;
     }
     100% {
       background-image: url(./images/1.jpg);
-      border-radius: 50%;
     }
   }
   .line {

@@ -11,10 +11,7 @@ const About = () => {
         <Layout page="about">
           <div className="motion">
             <div className="container">
-              <div
-                className="profilePic"
-               
-              ></div>
+              <img className="profilePic" src="./images/1.jpg" style={{width:'350px',height:'350px'}}></img>
               <div className="column-con">
                 <div>
                   <div>

@@ -1,17 +1,24 @@
 import { Fragment, useState, useEffect } from "react";
+import React from "react";
+
+import Dialog from "../component/dialog"
 const Web = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
+ 
+  const [open, setOpen] = React.useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
   };
-
+  
+  const handleClose = () => {
+    setOpen(false);
+  };
   const skills = [
     {
       icons: [
         {
-          intro:'Eduroom is a project in Integrated Project',
-          content:" It is an online learning platform that consists of many different systems such as Course, Forum, Learning Path, Message, etc ",
+          intro: "Eduroom is a project in Integrated Project",
+          content:
+            " It is an online learning platform that consists of many different systems such as Course, Forum, Learning Path, Message, etc ",
           title: "EDUROOM",
           year: "2020",
           img: "./images/project/eduroom/1.png",
@@ -43,6 +50,9 @@ const Web = (props) => {
     <Fragment>
       <div className="container1">
         <div>
+         <Dialog handleClickOpen={handleClose} open={open}></Dialog>
+        </div>
+        <div>
           {skills.map((i, index) => (
             <div key={index}>
               <div className="row">
@@ -62,13 +72,10 @@ const Web = (props) => {
                           <div className="content">
                             <h1>{s.title}</h1>
 
-                            <h5>  {s.intro}</h5>
-                            <p>
-                           {s.content}
-                              
-                            </p>
+                            <h5> {s.intro}</h5>
+                            <p>{s.content}</p>
                           </div>
-                          <button className="button">
+                          <button className="button" onClick={handleClickOpen}>
                             <span
                               style={{
                                 fontSize: "14px",
