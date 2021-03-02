@@ -8,8 +8,6 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
-
-// import Dialog from "../component/dialog1";
 const Web = (props) => {
   const [popup, setPopup] = React.useState(0);
 
@@ -24,34 +22,75 @@ const Web = (props) => {
   const handleClose = () => {
     setOpen(false);
   };
+  useEffect(() => {}, []);
   function Example(props) {
-    var items = [
-      {
-        image: "./images/project/eduroom/imageE/1.png",
-      },
-      {
-        image: "./images/project/eduroom/imageE/2.png",
-      },
-      {
-        image: "./images/project/eduroom/imageE/3.png",
-      },
-      {
-        image: "./images/project/eduroom/imageE/4.png",
-      },
-      {
-        image: "./images/project/eduroom/imageE/5.png",
-      },
-      {
-        image: "./images/project/eduroom/imageE/6.png",
-      },
-      {
-        image: "./images/project/eduroom/imageE/7.png",
-      },
-    ];
+    var item;
+    if (popup == 0) {
+      item = [
+        {
+          image: "./images/project/eduroom/imageE/1.png",
+        },
+        {
+          image: "./images/project/eduroom/imageE/2.png",
+        },
+        {
+          image: "./images/project/eduroom/imageE/3.png",
+        },
+        {
+          image: "./images/project/eduroom/imageE/4.png",
+        },
+        {
+          image: "./images/project/eduroom/imageE/5.png",
+        },
+        {
+          image: "./images/project/eduroom/imageE/6.png",
+        },
+        {
+          image: "./images/project/eduroom/imageE/7.png",
+        },
+      ];
+    } else {
+      item = [
+        {
+          image: "./images/project/eduroom/projectCSB/1.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/2.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/3.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/4.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/5.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/6.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/7.png",
+        },
+
+        {
+          image: "./images/project/eduroom/projectCSB/8.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/9.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/10.png",
+        },
+        {
+          image: "./images/project/eduroom/projectCSB/11.png",
+        },
+      ];
+    }
 
     return (
       <Carousel>
-        {items.map((item, i) => (
+        {item.map((item, i) => (
           <Item key={i} item={item} />
         ))}
       </Carousel>
@@ -85,19 +124,18 @@ const Web = (props) => {
           site: " site : https://eduroom.cscms.me",
         },
         {
-          title: "CSB",
+          title: "CSB (Computer Science Bank)",
           year: "2019",
-
+          content:"CS Bank is a term project in the course CSC105 Web Application Development where my group is responsible for the staff system",
           img: "./images/project/eduroom/2.png",
           front: "Front End Framework : VueJS",
           back: "Back End Framework : Java Servlet",
           socket: "",
-          db: "Database : Microsoft SQL",
+          db: `Database : Microsoft SQL`,
           link: " Link : github.com/wiree65/staff",
           css: "CSS Framework : Vuetify",
           site: "",
         },
-        
       ],
     },
   ];
@@ -105,22 +143,29 @@ const Web = (props) => {
     <Fragment>
       <div className="container1">
         <div>
-          <Dialog
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="alert-dialog-title"
-            aria-describedby="alert-dialog-description"
-          >
-            <DialogTitle id="alert-dialog-title">
-              {skills[0].icons[popup].title}
+          <Dialog open={open} onClose={handleClose}>
+            <DialogTitle
+              style={{
+                display: "flex",
+                alignContent: "center",
+                justifyContent: "center",
+              }}
+            >
+              <h3> {skills[0].icons[popup].title}</h3>
             </DialogTitle>
             <DialogContent>
               {Example()}
-
+              <br />
               <DialogContentText id="alert-dialog-description">
-                Let Google help apps determine location. This means sending
-                anonymous location data to Google, even when no apps are
-                running.
+               <p> {skills[0].icons[popup].content}</p>
+               <p> {skills[0].icons[popup].front}</p>
+               <p> {skills[0].icons[popup].back}</p>
+               <p> {skills[0].icons[popup].css}</p>
+               <p> {skills[0].icons[popup].db}</p>
+               <p> {skills[0].icons[popup].link}</p>
+               <p> {skills[0].icons[popup].site}</p>
+
+
               </DialogContentText>
             </DialogContent>
             <DialogActions></DialogActions>
