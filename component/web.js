@@ -1,17 +1,71 @@
 import { Fragment, useState, useEffect } from "react";
 import React from "react";
 
-import Dialog from "../component/dialog"
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import Carousel from "react-material-ui-carousel";
+import { Paper } from "@material-ui/core";
+
+// import Dialog from "../component/dialog1";
 const Web = (props) => {
- 
+  const [popup, setPopup] = React.useState(0);
+
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
     setOpen(true);
   };
-  
+  const setRenderPopup = (number) => {
+    setPopup(number);
+  };
+
   const handleClose = () => {
     setOpen(false);
   };
+  function Example(props) {
+    var items = [
+      {
+        image: "./images/project/eduroom/imageE/1.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/2.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/3.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/4.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/5.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/6.png",
+      },
+      {
+        image: "./images/project/eduroom/imageE/7.png",
+      },
+    ];
+
+    return (
+      <Carousel>
+        {items.map((item, i) => (
+          <Item key={i} item={item} />
+        ))}
+      </Carousel>
+    );
+  }
+  function Item(props) {
+    return (
+      <Paper>
+        <img src={`${props.item.image}`} style={{ width: "100%" }}>
+          {}
+        </img>
+      </Paper>
+    );
+  }
   const skills = [
     {
       icons: [
@@ -43,6 +97,7 @@ const Web = (props) => {
           css: "CSS Framework : Vuetify",
           site: "",
         },
+        
       ],
     },
   ];
@@ -50,7 +105,26 @@ const Web = (props) => {
     <Fragment>
       <div className="container1">
         <div>
-         <Dialog handleClickOpen={handleClose} open={open}></Dialog>
+          <Dialog
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+              {skills[0].icons[popup].title}
+            </DialogTitle>
+            <DialogContent>
+              {Example()}
+
+              <DialogContentText id="alert-dialog-description">
+                Let Google help apps determine location. This means sending
+                anonymous location data to Google, even when no apps are
+                running.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions></DialogActions>
+          </Dialog>
         </div>
         <div>
           {skills.map((i, index) => (
@@ -67,6 +141,7 @@ const Web = (props) => {
 
                         <h3 className="font">{s.title}</h3>
                         <p>{s.year}</p>
+
                         <br />
                         <div className="hoverdiv">
                           <div className="content">
@@ -75,7 +150,14 @@ const Web = (props) => {
                             <h5> {s.intro}</h5>
                             <p>{s.content}</p>
                           </div>
-                          <button className="button" onClick={handleClickOpen}>
+
+                          <button
+                            className="button"
+                            onClick={() => {
+                              handleClickOpen();
+                              setRenderPopup(i);
+                            }}
+                          >
                             <span
                               style={{
                                 fontSize: "14px",

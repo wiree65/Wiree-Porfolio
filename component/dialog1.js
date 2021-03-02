@@ -9,7 +9,8 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
-const Nav = ({ handleClickOpen, open }) => {
+const Nav = ({ handleClickOpen, open,s,i }) => {
+    
   function Example(props) {
     var items = [
       {
@@ -65,10 +66,11 @@ const Nav = ({ handleClickOpen, open }) => {
             </Button> */}
 
           <DialogTitle id="alert-dialog-title">
-            {"Use Google's location service?"}
+              ha
+          
           </DialogTitle>
           <DialogContent>
-            {Example()}
+          {Example()}
 
             <DialogContentText id="alert-dialog-description">
               Let Google help apps determine location. This means sending
