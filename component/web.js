@@ -115,25 +115,26 @@ const Web = (props) => {
           title: "EDUROOM",
           year: "2020",
           img: "./images/project/eduroom/1.png",
-          front: "Front End Framework : NextJS",
-          back: "Back End Framework : NodeJS",
-          socket: "Real Time: SocketIO",
+          front: "NextJS",
+          back: "NodeJS",
+          socket: "SocketIO",
           db: "PostgreSQL",
-          link: " Link : github.com/cs20-sit/eduroom",
-          css: "CSS Framework : MaterialUI",
-          site: " site : https://eduroom.cscms.me",
+          link: "github.com/cs20-sit/eduroom",
+          css: " MaterialUI",
+          site: "https://eduroom.cscms.me",
         },
         {
           title: "CSB (Computer Science Bank)",
           year: "2019",
-          content:"CS Bank is a term project in the course CSC105 Web Application Development where my group is responsible for the staff system",
+          content:
+            "CS Bank is a term project in the course CSC105 Web Application Development where my group is responsible for the staff system",
           img: "./images/project/eduroom/2.png",
-          front: "Front End Framework : VueJS",
-          back: "Back End Framework : Java Servlet",
+          front: "VueJS",
+          back: "Java Servlet",
           socket: "",
-          db: `Database : Microsoft SQL`,
-          link: " Link : github.com/wiree65/staff",
-          css: "CSS Framework : Vuetify",
+          db: `Microsoft SQL`,
+          link: "github.com/wiree65/staff",
+          css: "Vuetify",
           site: "",
         },
       ],
@@ -157,15 +158,42 @@ const Web = (props) => {
               {Example()}
               <br />
               <DialogContentText id="alert-dialog-description">
-               <p> {skills[0].icons[popup].content}</p>
-               <p> {skills[0].icons[popup].front}</p>
-               <p> {skills[0].icons[popup].back}</p>
-               <p> {skills[0].icons[popup].css}</p>
-               <p> {skills[0].icons[popup].db}</p>
-               <p> {skills[0].icons[popup].link}</p>
-               <p> {skills[0].icons[popup].site}</p>
-
-
+                {skills[0].icons[popup].content == "" ? (
+                  <div>{}</div>
+                ) : (
+                  <p><storng style={{fontSize:'20px'}}>Detail: </storng>{skills[0].icons[popup].content}</p>
+                )}
+                {skills[0].icons[popup].front == "" ? (
+                  <div>{}</div>
+                ) : (
+                  <p><storng style={{fontSize:'20px'}}>Front End Framework: </storng>{skills[0].icons[popup].front}</p>
+                )}
+                 {skills[0].icons[popup].db == "" ? (
+                  <div>{}</div>
+                ) : (
+                  <p><storng style={{fontSize:'20px'}}>Back End Framework: </storng>{skills[0].icons[popup].db}</p>
+                )}
+                 {skills[0].icons[popup].css == "" ? (
+                  <div>{}</div>
+                ) : (
+                  <p><storng style={{fontSize:'20px'}}>CSS: </storng>{skills[0].icons[popup].css}</p>
+                )}
+                 {skills[0].icons[popup].socket == "" ? (
+                  <div>{}</div>
+                ) : (
+                  <p><storng style={{fontSize:'20px'}}>Real-time </storng>{skills[0].icons[popup].socket}</p>
+                )}
+                
+                 {skills[0].icons[popup].link == "" ? (
+                  <div>{}</div>
+                ) : (
+                  <p><storng style={{fontSize:'20px'}}>Link: </storng>{skills[0].icons[popup].link}</p>
+                )}
+                 {skills[0].icons[popup].site == "" ? (
+                  <div>{}</div>
+                ) : (
+                  <p><storng style={{fontSize:'20px'}}>Site: </storng>{skills[0].icons[popup].site}</p>
+                )}
               </DialogContentText>
             </DialogContent>
             <DialogActions></DialogActions>
