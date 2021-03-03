@@ -39,72 +39,76 @@ const General = (props) => {
               </div>
             </a>
             <div className="card">
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                }}
-              >
-                <i
-                  className="fas fa-phone-square-alt"
+              <a>
+                <div
                   style={{
                     display: "flex",
-                    color: "#D18585",
-                    fontSize: "2rem",
-                    marginRight: "1rem",
+                    flexDirection: "row",
+                    alignItems: "center",
                   }}
-                ></i>
-                <p style={{ fontWeight: 700 }}> Tel:</p>
-              </div>
-              <p style={{ color: "#333333" }}>091-495-1456</p>
+                >
+                  <i
+                    className="fas fa-phone-square-alt"
+                    style={{
+                      display: "flex",
+                      color: "#D18585",
+                      fontSize: "2rem",
+                      marginRight: "1rem",
+                    }}
+                  ></i>
+                  <p style={{ fontWeight: 700 }}> Tel:</p>
+                </div>
+                <p style={{ color: "#333333" }}>091-495-1456</p>
+              </a>
             </div>
             <a href="mailto: Wirawat.565@mail.kmutt.ac.th">
-            <div className="card">
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                }}
-              >
-                <i
-                  className="fas fa-envelope"
+              <div className="card">
+                <div
                   style={{
                     display: "flex",
-                    color: "#D18585",
-                    fontSize: "2rem",
-                    marginRight: "1rem",
+                    flexDirection: "row",
+                    alignItems: "center",
                   }}
-                ></i>
-                <p style={{ fontWeight: 700 }}> Email Adress:</p>
+                >
+                  <i
+                    className="fas fa-envelope"
+                    style={{
+                      display: "flex",
+                      color: "#D18585",
+                      fontSize: "2rem",
+                      marginRight: "1rem",
+                    }}
+                  ></i>
+                  <p style={{ fontWeight: 700 }}> Email Adress:</p>
+                </div>
+                <p style={{ color: "#333333" }}>
+                  {" "}
+                  Wirawat.565@mail.kmutt.ac.th
+                </p>
               </div>
-              <p style={{ color: "#333333" }}> Wirawat.565@mail.kmutt.ac.th</p>
-            </div>
             </a>
             <a href="https://github.com/wiree65">
-
-            <div className="card">
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                }}
-              >
-                <i
-                  className="fab fa-github-square"
+              <div className="card">
+                <div
                   style={{
                     display: "flex",
-                    color: "#D18585",
-                    fontSize: "2rem",
-                    marginRight: "1rem",
+                    flexDirection: "row",
+                    alignItems: "center",
                   }}
-                ></i>
-                <p style={{ fontWeight: 700 }}> Github:</p>
+                >
+                  <i
+                    className="fab fa-github-square"
+                    style={{
+                      display: "flex",
+                      color: "#D18585",
+                      fontSize: "2rem",
+                      marginRight: "1rem",
+                    }}
+                  ></i>
+                  <p style={{ fontWeight: 700 }}> Github:</p>
+                </div>
+                <p style={{ color: "#333333" }}>github.com/wiree65</p>
               </div>
-              <p style={{ color: "#333333" }}>github.com/wiree65</p>
-            </div>
             </a>
           </div>
         </div>
@@ -117,7 +121,10 @@ const General = (props) => {
           background: white;
           transition: 0.3s;
           width: 300px;
-          margin: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
           padding: 50px;
           border-radius: 2vh;
           border: none;
@@ -207,6 +214,23 @@ const General = (props) => {
             text-align: center;
             margin: 0%;
             width: 80%;
+          }
+          .card {
+            display: flex;
+            justify-content: center;
+            background: white;
+            transition: 0.3s;
+            width: 300px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 50px;
+            border-radius: 2vh;
+            border: none;
+            box-shadow: 3px 3px 5px 3px #ccc;
+            padding: 0 10px 5px 30px;
+            flex-direction: column;
           }
         }
       `}</style>
