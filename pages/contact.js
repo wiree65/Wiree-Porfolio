@@ -28,10 +28,10 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p> Facebook:</p>
+                <p style={{fontWeight:700}}> Facebook:</p>
                
               </div>
-              <p>กาต๊าก กะตัก</p>
+              <p style={{color:'#333333'}}>กาต๊าก กะตัก</p>
             </div>
             <div className="card">
               <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
@@ -44,10 +44,10 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p> Tel:</p>
+                <p style={{fontWeight:700}}> Tel:</p>
                
               </div>
-              <p>091-495-1456</p>
+              <p style={{color:'#333333'}}>091-495-1456</p>
             </div>
             <div className="card">
               <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
@@ -60,10 +60,10 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p> Email Adress:</p>
+                <p style={{fontWeight:700}}> Email Adress:</p>
                
               </div>
-              <p>Katak6565@gmail.com</p>
+              <p style={{color:'#333333'}}>Katak6565@gmail.com</p>
             </div>
             <div className="card">
               <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
@@ -76,16 +76,18 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p> Github:</p>
+                <p style={{fontWeight:700}}> Github:</p>
                
               </div>
-              <p>github.com/wiree65</p>
+              <p style={{color:'#333333'}}>github.com/wiree65</p>
             </div>
+       
           </div>
         </div>
-        <br/>
-        <Footer></Footer>
+     
+      
       </Layout>
+      <Footer></Footer>
       <style jsx>{`
         .card {
           display: flex;
@@ -111,7 +113,6 @@ const General = (props) => {
         .row {
           flex-wrap: wrap;
           width: 50vw;
-          height: 25%;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -120,6 +121,7 @@ const General = (props) => {
         .margin {
           margin-left: 8%;
           width: 30vw;
+          text-align: center;
         }
         h1 {
           color: #d18585;
@@ -131,7 +133,8 @@ const General = (props) => {
           color: #7b7b7b;
         }
         .container {
-          height: 82vh;
+          height: 85vh;
+
           width: 100vw;
           display: flex;
           align-content: space-evenly;
@@ -145,6 +148,7 @@ const General = (props) => {
             color: #7b7b7b;
           }
           h1 {
+            
             color: #d18585;
             font-size: 40px;
             margin-top: 50px;
@@ -152,14 +156,13 @@ const General = (props) => {
           .row {
             flex-wrap: wrap;
             width: 80vw;
-            height: 25%;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             flex-direction: row;
           }
           .container {
-            height: 90vh;
+            height: 100%;
             width: 100vw;
             display: flex;
             justify-content: flex-start;
