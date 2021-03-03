@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
 
+import Footer from "../component/Footer";
 import Layout from "../component/Layout";
 const General = (props) => {
   return (
@@ -79,6 +80,8 @@ const General = (props) => {
             </div>
           </div>
         </div>
+        <br/>
+        <Footer></Footer>
       </Layout>
       <style jsx>{`
         .card {
@@ -125,7 +128,7 @@ const General = (props) => {
           color: #7b7b7b;
         }
         .container {
-          height: 90vh;
+          height: 82vh;
           width: 100vw;
           display: flex;
           align-content: space-evenly;
