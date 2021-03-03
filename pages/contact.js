@@ -39,7 +39,7 @@ const General = (props) => {
               </div>
             </a>
             <div className="card">
-              <a>
+              <a href="tel:0914951456">
                 <div
                   style={{
                     display: "flex",
