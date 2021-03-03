@@ -12,30 +12,41 @@ const General = (props) => {
             <p className="font">
               I’m looking forward to start a project with you!
             </p>
-            <p style={{color:"#7b7b7b"}}>
-             Please feel free to contact me
-            </p>
+            <p style={{ color: "#7b7b7b" }}>Please feel free to contact me</p>
           </div>
           <div className="row">
-            <div className="card">
-              <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
-              <i
-                  className="fab fa-facebook-square"
+            <a href="https://fb.me/katak56">
+              <div className="card">
+                <div
                   style={{
                     display: "flex",
-                    color: "#D18585",
-                    fontSize: "2rem",
-                    marginRight: "1rem",
+                    flexDirection: "row",
+                    alignItems: "center",
                   }}
-                ></i>
-                <p style={{fontWeight:700}}> Facebook:</p>
-               
+                >
+                  <i
+                    className="fab fa-facebook-square"
+                    style={{
+                      display: "flex",
+                      color: "#D18585",
+                      fontSize: "2rem",
+                      marginRight: "1rem",
+                    }}
+                  ></i>
+                  <p style={{ fontWeight: 700 }}> Facebook:</p>
+                </div>
+                <p style={{ color: "#333333" }}>fb.me/katak56</p>
               </div>
-              <p style={{color:'#333333'}}>กาต๊าก กะตัก</p>
-            </div>
+            </a>
             <div className="card">
-              <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
-              <i
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                <i
                   className="fas fa-phone-square-alt"
                   style={{
                     display: "flex",
@@ -44,14 +55,19 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p style={{fontWeight:700}}> Tel:</p>
-               
+                <p style={{ fontWeight: 700 }}> Tel:</p>
               </div>
-              <p style={{color:'#333333'}}>091-495-1456</p>
+              <p style={{ color: "#333333" }}>091-495-1456</p>
             </div>
             <div className="card">
-              <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
-              <i
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                <i
                   className="fas fa-envelope"
                   style={{
                     display: "flex",
@@ -60,14 +76,21 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p style={{fontWeight:700}}> Email Adress:</p>
-               
+                <p style={{ fontWeight: 700 }}> Email Adress:</p>
               </div>
-              <p style={{color:'#333333'}}>Katak6565@gmail.com</p>
+              <p style={{ color: "#333333" }}>Katak6565@gmail.com</p>
             </div>
+            <a href="https://github.com/wiree65">
+
             <div className="card">
-              <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
-              <i
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                <i
                   className="fab fa-github-square"
                   style={{
                     display: "flex",
@@ -76,16 +99,13 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p style={{fontWeight:700}}> Github:</p>
-               
+                <p style={{ fontWeight: 700 }}> Github:</p>
               </div>
-              <p style={{color:'#333333'}}>github.com/wiree65</p>
+              <p style={{ color: "#333333" }}>github.com/wiree65</p>
             </div>
-       
+            </a>
           </div>
         </div>
-     
-      
       </Layout>
       <Footer></Footer>
       <style jsx>{`
@@ -100,6 +120,19 @@ const General = (props) => {
           border-radius: 2vh;
           border: none;
           box-shadow: 3px 3px 5px 3px #ccc;
+          padding: 0 10px 5px 30px;
+          flex-direction: column;
+        }
+        .card:hover {
+          display: flex;
+          justify-content: center;
+          background: white;
+          transition: 0.3s;
+          width: 300px;
+          padding: 50px;
+          border-radius: 2vh;
+          border: none;
+          box-shadow: 3px 5px 15px 3px #ccc;
           padding: 0 10px 5px 30px;
           flex-direction: column;
         }
@@ -148,7 +181,6 @@ const General = (props) => {
             color: #7b7b7b;
           }
           h1 {
-            
             color: #d18585;
             font-size: 40px;
             margin-top: 50px;
