@@ -228,7 +228,7 @@ const General = (props) => {
             border-radius: 2vh;
             border: none;
             box-shadow: 3px 3px 5px 3px #ccc;
-            padding: 0 10px 5px 30px;
+            padding: 0 10px 5px 20px;
             flex-direction: column;
           }
         }
