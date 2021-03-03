@@ -157,7 +157,7 @@ const General = (props) => {
             flex-wrap: wrap;
             width: 80vw;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: flex-start;
             flex-direction: row;
           }
