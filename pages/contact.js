@@ -12,6 +12,9 @@ const General = (props) => {
             <p className="font">
               I’m looking forward to start a project with you!
             </p>
+            <p style={{color:"#7b7b7b"}}>
+             Please feel free to contact me
+            </p>
           </div>
           <div className="row">
             <div className="card">
@@ -49,7 +52,7 @@ const General = (props) => {
             <div className="card">
               <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
               <i
-                  className="fab fa-instagram-square"
+                  className="fas fa-envelope"
                   style={{
                     display: "flex",
                     color: "#D18585",
@@ -57,10 +60,10 @@ const General = (props) => {
                     marginRight: "1rem",
                   }}
                 ></i>
-                <p> Instragram:</p>
+                <p> Email Adress:</p>
                
               </div>
-              <p>091-495-1456</p>
+              <p>Katak6565@gmail.com</p>
             </div>
             <div className="card">
               <div style={{ display: "flex", flexDirection: "row",alignItems:'center', }}>
