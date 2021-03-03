@@ -59,6 +59,7 @@ const General = (props) => {
               </div>
               <p style={{ color: "#333333" }}>091-495-1456</p>
             </div>
+            <a href="mailto: Wirawat.565@mail.kmutt.ac.th">
             <div className="card">
               <div
                 style={{
@@ -78,8 +79,9 @@ const General = (props) => {
                 ></i>
                 <p style={{ fontWeight: 700 }}> Email Adress:</p>
               </div>
-              <p style={{ color: "#333333" }}>Katak6565@gmail.com</p>
+              <p style={{ color: "#333333" }}> Wirawat.565@mail.kmutt.ac.th</p>
             </div>
+            </a>
             <a href="https://github.com/wiree65">
 
             <div className="card">
