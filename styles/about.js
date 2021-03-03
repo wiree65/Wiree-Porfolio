@@ -1,14 +1,12 @@
 import css from "styled-jsx/css";
 export default css`
   .profilePic {
-    // background-image: url(./images/1.jpg);
-    // background-size: 100% 100%;
+  
     border-radius: 50%;
-    // trainsition: 5s;
-    // width: 350px;
-    // height: 350px;
-    // margin: 30px;
-    // animation: profile 10s infinite;
+    margin:30px;
+    width: 350px;
+    height: auto;
+
   }
   @keyframes profile {
     0% {

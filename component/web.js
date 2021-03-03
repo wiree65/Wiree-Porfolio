@@ -155,7 +155,9 @@ const Web = (props) => {
               <h3> {skills[0].icons[popup].title}</h3>
             </DialogTitle>
             <DialogContent>
+           
               {Example()}
+           
               <br />
               <DialogContentText id="alert-dialog-description">
                 {skills[0].icons[popup].content == "" ? (

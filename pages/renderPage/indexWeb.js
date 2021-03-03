@@ -12,7 +12,7 @@ const Home = () => {
           <div className="motion">
             <div className="container">
               <img
-                src="/images/1.jpg"
+                src="/images/profile.png"
                 className="profilePic"
                 alt="profile picture"
               ></img>
@@ -98,8 +98,8 @@ const Home = () => {
       <style jsx>{`
         .profilePic {
           border-radius: 50%;
-          width:350px;
-          margin:30px;
+          width: 350px;
+          margin: 30px;
         }
         .line {
           background-color: #d18585;
@@ -125,7 +125,7 @@ const Home = () => {
             top: 0px;
           }
         }
-      
+
         .button {
           background-color: #d18585;
           text-align: center;
