@@ -148,7 +148,7 @@ const Web = (props) => {
                       <div className="container">
                         <img
                           src={`${s.img}`}
-                          style={{ width: `${s.width}`, borderRadius: "32px" }}
+                          style={{ width: `${s.width}`, borderRadius: "32px 32px 0px 0px" }}
                         ></img>
 
                         <h3 className="font">{s.intro}</h3>
