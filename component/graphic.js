@@ -45,44 +45,22 @@ const Web = (props) => {
         {
           image: "./images/Graphic/burger/7.jpg",
         },
-        
       ];
     } else {
       item = [
         {
-          image: "./images/project/eduroom/projectCSB/1.png",
+          image: "./images/Graphic/gen351/1.jpg",
         },
         {
-          image: "./images/project/eduroom/projectCSB/2.png",
+          image: "./images/Graphic/gen351/2.jpg",
         },
         {
-          image: "./images/project/eduroom/projectCSB/3.png",
+          image: "./images/Graphic/gen351/3.jpg",
         },
         {
-          image: "./images/project/eduroom/projectCSB/4.png",
+          image: "./images/Graphic/gen351/4.jpg",
         },
-        {
-          image: "./images/project/eduroom/projectCSB/5.png",
-        },
-        {
-          image: "./images/project/eduroom/projectCSB/6.png",
-        },
-        {
-          image: "./images/project/eduroom/projectCSB/7.png",
-        },
-
-        {
-          image: "./images/project/eduroom/projectCSB/8.png",
-        },
-        {
-          image: "./images/project/eduroom/projectCSB/9.png",
-        },
-        {
-          image: "./images/project/eduroom/projectCSB/10.png",
-        },
-        {
-          image: "./images/project/eduroom/projectCSB/11.png",
-        },
+        
       ];
     }
 
@@ -108,14 +86,23 @@ const Web = (props) => {
       icons: [
         {
           intro: "Burger Joker",
-          content:
-            "It's restaurant that I design a logo, menu, promotions",
+          content: "It's restaurant that I design a logo, menu, promotions",
           year: "2020",
           img: "./images/Graphic/burger/2.png",
           picinhover: "./images/Graphic/burger/7.jpg",
+          width: "190px",
+          widthHov: "150px",
 
         },
-        
+        {
+          intro: "Infographic Presentation GEN351",
+          content: "Term project GEN351 final Presentation infographic",
+          year: "2020",
+          img: "./images/Graphic/gen351/1.jpg",
+          picinhover: "./images/Graphic/gen351/1.jpg",
+          width: "100%",
+          widthHov:'170px'
+        },
       ],
     },
   ];
@@ -134,17 +121,18 @@ const Web = (props) => {
               <h3> {skills[0].icons[popup].title}</h3>
             </DialogTitle>
             <DialogContent>
-           
               {Example()}
-           
+
               <br />
               <DialogContentText id="alert-dialog-description">
                 {skills[0].icons[popup].content == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>Detail: </storng>{skills[0].icons[popup].content}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>Detail: </storng>
+                    {skills[0].icons[popup].content}
+                  </p>
                 )}
-               
               </DialogContentText>
             </DialogContent>
             <DialogActions></DialogActions>
@@ -160,7 +148,7 @@ const Web = (props) => {
                       <div className="container">
                         <img
                           src={`${s.img}`}
-                          style={{ width: "190px", borderRadius: "32px" }}
+                          style={{ width: `${s.width}`, borderRadius: "32px" }}
                         ></img>
 
                         <h3 className="font">{s.intro}</h3>
@@ -169,12 +157,15 @@ const Web = (props) => {
                         <br />
                         <div className="hoverdiv">
                           <div className="content">
-                          <h5> {s.intro}</h5>
-                    
-                          <img
-                          src={`${s.picinhover}`}
-                          style={{ width: "150px",borderRadius:'10px' }}
-                        ></img>
+                            <h5> {s.intro}</h5>
+
+                            <img
+                              src={`${s.picinhover}`}
+                              style={{
+                                width: `${s.widthHov}`,
+                                borderRadius: "10px",
+                              }}
+                            ></img>
                             <p>{s.content}</p>
                           </div>
 
@@ -185,7 +176,6 @@ const Web = (props) => {
                               setRenderPopup(i);
                             }}
                           >
-                            
                             <span
                               style={{
                                 fontSize: "14px",
@@ -249,7 +239,7 @@ const Web = (props) => {
         }
         .container {
           width: 320px;
-          height:300px;
+          height: 300px;
           box-shadow: 3px 3px 5px 3px #ccc;
           margin: 20px;
           border-radius: 32px;
