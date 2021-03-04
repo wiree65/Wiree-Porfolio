@@ -165,7 +165,7 @@ const Web = (props) => {
           img: "./images/Graphic/spa/1.png",
           picinhover: "./images/Graphic/spa/2.png",
           width: "320px",
-          widthHov: "150px",
+          widthHov: "130px",
           radius: "32px 32px 0px 0px",
         },
       ],

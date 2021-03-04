@@ -1,12 +1,10 @@
 import css from "styled-jsx/css";
 export default css`
   .profilePic {
-  
     border-radius: 50%;
-    margin:30px;
+    margin: 30px;
     width: 350px;
     height: auto;
-
   }
   @keyframes profile {
     0% {
@@ -167,7 +165,7 @@ export default css`
     .profilePic {
       // margin:30px;
       width: 350px;
-      height:auto;
+      height: auto;
     }
     .text {
       text-align: center;
