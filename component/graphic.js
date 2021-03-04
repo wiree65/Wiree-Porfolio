@@ -70,8 +70,7 @@ const Web = (props) => {
           image: "./images/Graphic/gen121/2.png",
         },
       ];
-    }
-    else if (popup == 3) {
+    } else if (popup == 3) {
       item = [
         {
           image: "./images/Graphic/kongcha/1.png",
@@ -83,8 +82,7 @@ const Web = (props) => {
           image: "./images/Graphic/kongcha/3.png",
         },
       ];
-    }
-    else if (popup == 4) {
+    } else if (popup == 4) {
       item = [
         {
           image: "./images/Graphic/spa/1.png",
@@ -94,6 +92,15 @@ const Web = (props) => {
         },
         {
           image: "./images/Graphic/spa/3.png",
+        },
+      ];
+    } else if (popup == 5) {
+      item = [
+        {
+          image: "./images/Graphic/company/1.jpg",
+        },
+        {
+          image: "./images/Graphic/company/2.jpg",
         },
       ];
     }
@@ -150,7 +157,8 @@ const Web = (props) => {
         },
         {
           intro: "Milk Tea Shop Logo",
-          content: "This is the milk tea shop logo by using Illustrator to create",
+          content:
+            "This is the milk tea shop logo by using Illustrator to create",
           year: "2020",
           img: "./images/Graphic/kongcha/1.png",
           picinhover: "./images/Graphic/kongcha/1.png",
@@ -166,6 +174,16 @@ const Web = (props) => {
           picinhover: "./images/Graphic/spa/2.png",
           width: "320px",
           widthHov: "130px",
+          radius: "32px 32px 0px 0px",
+        },
+        {
+          intro: "Enercon Company Profile",
+          content: "Company Profile of Enercon Enginerring Co., Ltd.",
+          year: "2020",
+          img: "./images/Graphic/company/1.jpg",
+          picinhover: "./images/Graphic/company/2.jpg",
+          width: "125px",
+          widthHov: "70px",
           radius: "32px 32px 0px 0px",
         },
       ],
