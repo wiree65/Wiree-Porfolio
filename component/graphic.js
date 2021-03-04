@@ -46,7 +46,7 @@ const Web = (props) => {
           image: "./images/Graphic/burger/7.jpg",
         },
       ];
-    } else {
+    } else if (popup == 1) {
       item = [
         {
           image: "./images/Graphic/gen351/1.jpg",
@@ -60,6 +60,18 @@ const Web = (props) => {
         {
           image: "./images/Graphic/gen351/4.jpg",
         },
+        
+      ];
+    }
+   else if (popup == 2) {
+      item = [
+        {
+          image: "./images/Graphic/gen121/1.png",
+        },
+        {
+          image: "./images/Graphic/gen121/2.png",
+        },
+      
         
       ];
     }
@@ -92,6 +104,7 @@ const Web = (props) => {
           picinhover: "./images/Graphic/burger/7.jpg",
           width: "190px",
           widthHov: "150px",
+          radius:"32px 32px 0px 0px"
 
         },
         {
@@ -101,7 +114,20 @@ const Web = (props) => {
           img: "./images/Graphic/gen351/1.jpg",
           picinhover: "./images/Graphic/gen351/1.jpg",
           width: "100%",
-          widthHov:'170px'
+          widthHov:'170px',
+          radius:"32px 32px 0px 0px"
+
+        },
+        {
+          intro: "Infographic Presentation GEN121",
+          content: "Term project GEN121 final Presentation infographic",
+          year: "2020",
+          img: "./images/Graphic/gen121/1.png",
+          picinhover: "./images/Graphic/gen121/1.png",
+          width: "130px",
+          widthHov:'70px',
+          radius:"0px 0px 0px 0px"
+
         },
       ],
     },
@@ -148,7 +174,7 @@ const Web = (props) => {
                       <div className="container">
                         <img
                           src={`${s.img}`}
-                          style={{ width: `${s.width}`, borderRadius: "32px 32px 0px 0px" }}
+                          style={{ width: `${s.width}`, borderRadius: s.radius }}
                         ></img>
 
                         <h3 className="font">{s.intro}</h3>
