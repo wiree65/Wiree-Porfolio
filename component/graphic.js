@@ -142,7 +142,7 @@ const Web = (props) => {
           img: "./images/Graphic/kongcha/1.png",
           picinhover: "./images/Graphic/kongcha/1.png",
           width: "185px",
-          widthHov: "70px",
+          widthHov: "100px",
           radius: "0px 0px 10px 10px",
         },
       ],
