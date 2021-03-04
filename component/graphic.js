@@ -60,10 +60,8 @@ const Web = (props) => {
         {
           image: "./images/Graphic/gen351/4.jpg",
         },
-        
       ];
-    }
-   else if (popup == 2) {
+    } else if (popup == 2) {
       item = [
         {
           image: "./images/Graphic/gen121/1.png",
@@ -71,8 +69,19 @@ const Web = (props) => {
         {
           image: "./images/Graphic/gen121/2.png",
         },
-      
-        
+      ];
+    }
+    else if (popup == 3) {
+      item = [
+        {
+          image: "./images/Graphic/kongcha/1.png",
+        },
+        {
+          image: "./images/Graphic/kongcha/2.png",
+        },
+        {
+          image: "./images/Graphic/kongcha/3.png",
+        },
       ];
     }
 
@@ -104,8 +113,7 @@ const Web = (props) => {
           picinhover: "./images/Graphic/burger/7.jpg",
           width: "190px",
           widthHov: "150px",
-          radius:"32px 32px 0px 0px"
-
+          radius: "32px 32px 0px 0px",
         },
         {
           intro: "Infographic Presentation GEN351",
@@ -114,9 +122,8 @@ const Web = (props) => {
           img: "./images/Graphic/gen351/1.jpg",
           picinhover: "./images/Graphic/gen351/1.jpg",
           width: "100%",
-          widthHov:'170px',
-          radius:"32px 32px 0px 0px"
-
+          widthHov: "170px",
+          radius: "32px 32px 0px 0px",
         },
         {
           intro: "Infographic Presentation GEN121",
@@ -125,9 +132,18 @@ const Web = (props) => {
           img: "./images/Graphic/gen121/1.png",
           picinhover: "./images/Graphic/gen121/1.png",
           width: "130px",
-          widthHov:'70px',
-          radius:"0px 0px 0px 0px"
-
+          widthHov: "70px",
+          radius: "0px 0px 10px 10px",
+        },
+        {
+          intro: "Milk Tea Shop Logo",
+          content: "This is the milk tea shop logo by using Illustrator to create",
+          year: "2020",
+          img: "./images/Graphic/kongcha/1.png",
+          picinhover: "./images/Graphic/kongcha/1.png",
+          width: "185px",
+          widthHov: "70px",
+          radius: "0px 0px 10px 10px",
         },
       ],
     },
@@ -174,7 +190,10 @@ const Web = (props) => {
                       <div className="container">
                         <img
                           src={`${s.img}`}
-                          style={{ width: `${s.width}`, borderRadius: s.radius }}
+                          style={{
+                            width: `${s.width}`,
+                            borderRadius: s.radius,
+                          }}
                         ></img>
 
                         <h3 className="font">{s.intro}</h3>
