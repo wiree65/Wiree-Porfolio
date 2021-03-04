@@ -104,6 +104,17 @@ const Web = (props) => {
         },
       ];
     }
+   else if (popup == 6) {
+    item = [
+      {
+        image: "./images/Graphic/company1/1.jpg",
+      },
+      {
+        image: "./images/Graphic/company1/2.jpg",
+      },
+    ];
+  }
+
 
     return (
       <Carousel>
@@ -185,6 +196,16 @@ const Web = (props) => {
           width: "125px",
           widthHov: "70px",
           radius: "32px 32px 0px 0px",
+        },
+        {
+          intro: "OPH Constuction Company Profile",
+          content: "OPH Constuction Company Profile",
+          year: "2019",
+          img: "./images/Graphic/company1/1.jpg",
+          picinhover: "./images/Graphic/company1/2.jpg",
+          width: "250px",
+          widthHov: "160px",
+          radius: "0px 0px 0px 0px",
         },
       ],
     },
