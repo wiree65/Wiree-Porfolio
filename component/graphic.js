@@ -84,6 +84,19 @@ const Web = (props) => {
         },
       ];
     }
+    else if (popup == 4) {
+      item = [
+        {
+          image: "./images/Graphic/spa/1.png",
+        },
+        {
+          image: "./images/Graphic/spa/2.png",
+        },
+        {
+          image: "./images/Graphic/spa/3.png",
+        },
+      ];
+    }
 
     return (
       <Carousel>
@@ -144,6 +157,16 @@ const Web = (props) => {
           width: "185px",
           widthHov: "100px",
           radius: "0px 0px 10px 10px",
+        },
+        {
+          intro: "Advertisement Facebook Spa",
+          content: "ADs Facebook spa to promote the event of the shop",
+          year: "2020",
+          img: "./images/Graphic/spa/1.png",
+          picinhover: "./images/Graphic/spa/2.png",
+          width: "320px",
+          widthHov: "150px",
+          radius: "32px 32px 0px 0px",
         },
       ],
     },

@@ -6,7 +6,7 @@ const Nav = ({ page }) => {
     { label: "Home", link: "/", page: "home" },
     { label: "About", link: "/about", page: "about" },
     { label: "Experiences", link: "/experiences", page: "experiences" },
-    { label: "Activities", link: "/activities", page: "activities" },
+    // { label: "Activities", link: "/activities", page: "activities" },
     { label: "Contact", link: "/contact", page: "contact" },
   ];
   return (
