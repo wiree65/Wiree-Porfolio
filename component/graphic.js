@@ -49,6 +49,24 @@ const Web = (props) => {
     } else if (popup == 1) {
       item = [
         {
+          image: "./images/Graphic/yum/1.png",
+        },
+        {
+          image: "./images/Graphic/yum/2.png",
+        },
+        {
+          image: "./images/Graphic/yum/3.png",
+        },
+        {
+          image: "./images/Graphic/yum/4.png",
+        },
+        {
+          image: "./images/Graphic/yum/5.png",
+        },
+      ];
+    } else if (popup == 2) {
+      item = [
+        {
           image: "./images/Graphic/gen351/1.jpg",
         },
         {
@@ -59,15 +77,6 @@ const Web = (props) => {
         },
         {
           image: "./images/Graphic/gen351/4.jpg",
-        },
-      ];
-    } else if (popup == 2) {
-      item = [
-        {
-          image: "./images/Graphic/gen121/1.png",
-        },
-        {
-          image: "./images/Graphic/gen121/2.png",
         },
       ];
     } else if (popup == 3) {
@@ -103,18 +112,25 @@ const Web = (props) => {
           image: "./images/Graphic/company/2.jpg",
         },
       ];
+    } else if (popup == 6) {
+      item = [
+        {
+          image: "./images/Graphic/company1/1.jpg",
+        },
+        {
+          image: "./images/Graphic/company1/2.jpg",
+        },
+      ];
+    } else if (popup == 7) {
+      item = [
+        {
+          image: "./images/Graphic/gen121/1.png",
+        },
+        {
+          image: "./images/Graphic/gen121/2.png",
+        },
+      ];
     }
-   else if (popup == 6) {
-    item = [
-      {
-        image: "./images/Graphic/company1/1.jpg",
-      },
-      {
-        image: "./images/Graphic/company1/2.jpg",
-      },
-    ];
-  }
-
 
     return (
       <Carousel>
@@ -147,6 +163,16 @@ const Web = (props) => {
           radius: "32px 32px 0px 0px",
         },
         {
+          intro: "Yum Yod Chai",
+          content: "Design logo, menu, drawing plan",
+          year: "2020",
+          img: "./images/Graphic/yum/1.png",
+          picinhover: "./images/Graphic/yum/2.png",
+          width: "190px",
+          widthHov: "160px",
+          radius: "0px 0px 0px 0px",
+        },
+        {
           intro: "Infographic Presentation GEN351",
           content: "Term project GEN351 final Presentation infographic",
           year: "2020",
@@ -156,16 +182,7 @@ const Web = (props) => {
           widthHov: "170px",
           radius: "32px 32px 0px 0px",
         },
-        {
-          intro: "Infographic Presentation GEN121",
-          content: "Term project GEN121 final Presentation infographic",
-          year: "2020",
-          img: "./images/Graphic/gen121/1.png",
-          picinhover: "./images/Graphic/gen121/1.png",
-          width: "130px",
-          widthHov: "70px",
-          radius: "0px 0px 10px 10px",
-        },
+
         {
           intro: "Milk Tea Shop Logo",
           content:
@@ -206,6 +223,16 @@ const Web = (props) => {
           width: "250px",
           widthHov: "160px",
           radius: "0px 0px 0px 0px",
+        },
+        {
+          intro: "Infographic Presentation GEN121",
+          content: "Term project GEN121 final Presentation infographic",
+          year: "2019",
+          img: "./images/Graphic/gen121/1.png",
+          picinhover: "./images/Graphic/gen121/1.png",
+          width: "130px",
+          widthHov: "70px",
+          radius: "0px 0px 10px 10px",
         },
       ],
     },
