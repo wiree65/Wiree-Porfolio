@@ -169,7 +169,7 @@ const Web = (props) => {
           img: "./images/Graphic/yum/1.png",
           picinhover: "./images/Graphic/yum/2.png",
           width: "190px",
-          widthHov: "160px",
+          widthHov: "210px",
           radius: "0px 0px 0px 0px",
         },
         {
