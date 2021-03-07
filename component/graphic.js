@@ -28,6 +28,20 @@ const Web = (props) => {
     if (popup == 0) {
       item = [
         {
+          image: "./images/Graphic/openhouse/1.png",
+        },
+        {
+          image: "./images/Graphic/openhouse/2.jpg",
+        },
+        {
+          image: "./images/Graphic/openhouse/3.png",
+        },
+       
+      ];
+    }
+    if (popup == 1) {
+      item = [
+        {
           image: "./images/Graphic/burger/1.png",
         },
         {
@@ -46,7 +60,7 @@ const Web = (props) => {
           image: "./images/Graphic/burger/7.jpg",
         },
       ];
-    } else if (popup == 1) {
+    } else if (popup == 2) {
       item = [
         {
           image: "./images/Graphic/yum/1.png",
@@ -64,7 +78,7 @@ const Web = (props) => {
           image: "./images/Graphic/yum/5.png",
         },
       ];
-    } else if (popup == 2) {
+    } else if (popup == 3) {
       item = [
         {
           image: "./images/Graphic/gen351/1.jpg",
@@ -79,7 +93,7 @@ const Web = (props) => {
           image: "./images/Graphic/gen351/4.jpg",
         },
       ];
-    } else if (popup == 3) {
+    } else if (popup == 4) {
       item = [
         {
           image: "./images/Graphic/kongcha/1.png",
@@ -91,7 +105,7 @@ const Web = (props) => {
           image: "./images/Graphic/kongcha/3.png",
         },
       ];
-    } else if (popup == 4) {
+    } else if (popup == 5) {
       item = [
         {
           image: "./images/Graphic/spa/1.png",
@@ -103,7 +117,7 @@ const Web = (props) => {
           image: "./images/Graphic/spa/3.png",
         },
       ];
-    } else if (popup == 5) {
+    } else if (popup == 6) {
       item = [
         {
           image: "./images/Graphic/company/1.jpg",
@@ -112,7 +126,7 @@ const Web = (props) => {
           image: "./images/Graphic/company/2.jpg",
         },
       ];
-    } else if (popup == 6) {
+    } else if (popup == 7) {
       item = [
         {
           image: "./images/Graphic/company1/1.jpg",
@@ -121,7 +135,7 @@ const Web = (props) => {
           image: "./images/Graphic/company1/2.jpg",
         },
       ];
-    } else if (popup == 7) {
+    } else if (popup == 8) {
       item = [
         {
           image: "./images/Graphic/gen121/1.png",
@@ -152,6 +166,16 @@ const Web = (props) => {
   const skills = [
     {
       icons: [
+        {
+          intro: "SIT Open House 2021",
+          content: "Motion graphic using PowerPoint to create",
+          year: "2021",
+          img: "./images/Graphic/openhouse/3.png",
+          picinhover: "./images/Graphic/openhouse/2.jpg",
+          width: "100%",
+          widthHov: "100px",
+          radius: "32px 32px 0px 0px",
+        },
         {
           intro: "Burger Joker",
           content: "It's restaurant that I design a logo, menu, promotions",
