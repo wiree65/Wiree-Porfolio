@@ -6,7 +6,6 @@ const Nav = ({ page }) => {
     { label: "Home", link: "/", page: "home" },
     { label: "About", link: "/about", page: "about" },
     { label: "Experiences", link: "/experiences", page: "experiences" },
-    // { label: "Activities", link: "/activities", page: "activities" },
     { label: "Contact", link: "/contact", page: "contact" },
   ];
   return (
@@ -26,14 +25,13 @@ const Nav = ({ page }) => {
         })}
       </div>
       <style jsx>{`
-       .nonactive {
-      
-      }
-      .nonactive:hover {
-        border-bottom: 2px solid #d18585;
-        transition: 0.1s;
-        opacity: 0.8;
-      }
+        .nonactive {
+        }
+        .nonactive:hover {
+          border-bottom: 2px solid #d18585;
+          transition: 0.1s;
+          opacity: 0.8;
+        }
         .active {
           font-weight: 600;
           transition: 1s;

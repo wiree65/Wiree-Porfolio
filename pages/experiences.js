@@ -1,7 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
 import Web from "../component/web";
 import Graphic from "../component/graphic";
-
 import Layout from "../component/Layout";
 import Footer from "../component/Footer";
 
