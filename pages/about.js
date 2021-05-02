@@ -11,7 +11,7 @@ const About = () => {
         <Layout page="about">
           <div className="motion">
             <div className="container">
-              <img className="profilePic" src="./images/profile.png" ></img>
+              <img className="profilePic" src="./images/profile.png"></img>
               <div className="column-con">
                 <div>
                   <div>
@@ -94,7 +94,7 @@ const About = () => {
                     className="row"
                     style={{ justifyContent: "center", alignItems: "center" }}
                   >
-                    <h1 style={{ color: "#D18585" }}>Technology Skills</h1>
+                    <h1 style={{ color: "#D18585" }}>Technical Skills</h1>
                     <i
                       className="fas fa-laptop-code"
                       style={{
@@ -120,11 +120,11 @@ const About = () => {
                     </div>
                     <Skills id={"font"}></Skills>
                   </div>
-                  <br />
+                  <br/>
                   <div className="card1">
                     <div className="row" style={{ paddingLeft: "20px" }}>
                       <h3 style={{ color: "#D18585", margin: "0px" }}>
-                        Backend and Tools
+                        Backend
                       </h3>
                       <h3
                         style={{
@@ -135,7 +135,24 @@ const About = () => {
                         Development
                       </h3>
                     </div>
-                    <Skills id={"back"} />
+                    <Skills id={"back"}></Skills>
+                  </div>
+                  <br />
+                  <div className="card1">
+                    <div className="row" style={{ paddingLeft: "20px" }}>
+                      <h3 style={{ color: "#D18585", margin: "0px" }}>
+                        Tools
+                      </h3>
+                      <h3
+                        style={{
+                          marginLeft: "5px",
+                          margin: "0px  0px 0px 5px",
+                        }}
+                      >
+                        Development
+                      </h3>
+                    </div>
+                    <Skills id={"tools"} />
                   </div>
                   <br />
                   <div className="card1">
