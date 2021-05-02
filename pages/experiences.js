@@ -1,6 +1,8 @@
 import { Fragment, useState, useEffect } from "react";
 import Web from "../component/web";
 import Graphic from "../component/graphic";
+import MobileDev from "../component/mobileDev";
+
 import Layout from "../component/Layout";
 import Footer from "../component/Footer";
 
@@ -11,12 +13,16 @@ const General = (props) => {
       case 1:
         return <Web />;
       case 2:
-        return <Graphic />;
+        return <MobileDev />;
+        case 3:
+          return <Graphic />;
     }
   };
   const items = [
     { label: "Web Development", page: 1 },
-    { label: "Graphic design", page: 2 },
+    { label: "Mobile Development", page: 2 },
+    { label: "Graphic design", page: 3 },
+
   ];
   return (
     <Fragment>
@@ -53,6 +59,7 @@ const General = (props) => {
       <style jsx>{`
         .nonactive {
           margin: 10px;
+          font-weight: 700;
         }
         .nonactive:hover {
           border-bottom: 3px solid #d18585;
