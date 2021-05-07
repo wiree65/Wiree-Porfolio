@@ -32,7 +32,7 @@ const Skills = ({ id }) => {
     {
       icons: [
         { title: "Git & Github", icon: "fab fa-github-square" },
-        { title: "Git & Github", icon: "fab fa-gitkraken" },
+        { title: "Git Kraken", icon: "fab fa-gitkraken" },
 
         { title: "Docker", icon: "fab fa-docker" },
         { title: "Figma", icon: "/images/figma.png" },
@@ -95,7 +95,7 @@ const Skills = ({ id }) => {
                       {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon"></img>
                         ) : (
-                          <i className={`${s.icon}`}></i>
+                          <i className={`${s.icon}` }></i>
                         )}
              
 

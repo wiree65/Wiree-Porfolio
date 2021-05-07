@@ -8,6 +8,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
+
 const Web = (props) => {
   const [popup, setPopup] = React.useState(0);
 
@@ -96,12 +97,25 @@ const Web = (props) => {
       </Carousel>
     );
   }
+
+  const [loaded, setLoaded] = useState(false);
+
+  const handleLoad = () => {
+    console.log("Loaded");
+    setLoaded(true);
+  };
   function Item(props) {
     return (
       <Paper>
-        <img src={`${props.item.image}`} style={{ width: "100%" }}>
-          {}
-        </img>
+        {loaded ? (
+                  <div>{}</div>
+                ) : (
+                  <p>
+                    test
+                  </p>
+                )}
+        
+        <img src={`${props.item.image}`} onLoad={handleLoad} style={{ width: "100%" }}></img>
       </Paper>
     );
   }
@@ -155,46 +169,70 @@ const Web = (props) => {
               <h3> {skills[0].icons[popup].title}</h3>
             </DialogTitle>
             <DialogContent>
-           
               {Example()}
-           
+
               <br />
               <DialogContentText id="alert-dialog-description">
                 {skills[0].icons[popup].content == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>Detail: </storng>{skills[0].icons[popup].content}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>Detail: </storng>
+                    {skills[0].icons[popup].content}
+                  </p>
                 )}
                 {skills[0].icons[popup].front == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>Front End Framework: </storng>{skills[0].icons[popup].front}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>
+                      Front End Framework:{" "}
+                    </storng>
+                    {skills[0].icons[popup].front}
+                  </p>
                 )}
-                 {skills[0].icons[popup].db == "" ? (
+                {skills[0].icons[popup].db == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>Back End Framework: </storng>{skills[0].icons[popup].db}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>
+                      Back End Framework:{" "}
+                    </storng>
+                    {skills[0].icons[popup].db}
+                  </p>
                 )}
-                 {skills[0].icons[popup].css == "" ? (
+                {skills[0].icons[popup].css == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>CSS: </storng>{skills[0].icons[popup].css}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>CSS: </storng>
+                    {skills[0].icons[popup].css}
+                  </p>
                 )}
-                 {skills[0].icons[popup].socket == "" ? (
+                {skills[0].icons[popup].socket == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>Real-time </storng>{skills[0].icons[popup].socket}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>Real-time </storng>
+                    {skills[0].icons[popup].socket}
+                  </p>
                 )}
-                
-                 {skills[0].icons[popup].link == "" ? (
+
+                {skills[0].icons[popup].link == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>Link: </storng>{skills[0].icons[popup].link}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>Link: </storng>
+                    {skills[0].icons[popup].link}
+                  </p>
                 )}
-                 {skills[0].icons[popup].site == "" ? (
+                {skills[0].icons[popup].site == "" ? (
                   <div>{}</div>
                 ) : (
-                  <p><storng style={{fontSize:'20px'}}>Site: </storng>{skills[0].icons[popup].site}</p>
+                  <p>
+                    <storng style={{ fontSize: "20px" }}>Site: </storng>
+                    {skills[0].icons[popup].site}
+                  </p>
                 )}
               </DialogContentText>
             </DialogContent>

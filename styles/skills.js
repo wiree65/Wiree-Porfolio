@@ -37,7 +37,7 @@ i {
       font-weight: 500;
     }
     .icon {
-      width: 42.5px;
+      width: 25px;
     }
     .icon1 {
       width: 42.5px;
