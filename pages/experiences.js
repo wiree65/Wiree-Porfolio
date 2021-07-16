@@ -30,8 +30,8 @@ const General = (props) => {
         <div className="container">
           <h1>Showcase</h1>
           <p style={{ fontWeight: "500", color: "#4F4F4F" }}>-Minimal & simple are a passion of mine-</p>
-          <p style={{ fontWeight: "500", color: "#4F4F4F" }}> I will try my best to create good quality and work</p>
-          <p style={{ fontWeight: "500", color: "#4F4F4F" }}>The showcase composes of Web Development, Mobile development, and Graphic design</p>
+          <p style={{ color: "#4F4F4F" }}> I will try my best to create good quality and work</p>
+          <p style={{  color: "#4F4F4F" }}>The showcase composes of Web Development, Mobile development, and Graphic design</p>
           <div className="row">
             {items.map((item) => {
               return (
