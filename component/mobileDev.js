@@ -26,7 +26,7 @@ const Mobile = (props) => {
   useEffect(() => {}, []);
   function Example(props) {
     var item;
-    if (popup == 0) {
+    if (popup == 1) {
       item = [
         {
           image: "./images/project/mobileDev/1.png",
@@ -77,6 +77,36 @@ const Mobile = (props) => {
           image: "./images/project/mobileDev/16.png",
         },
       ];
+    } else if (popup == 0) {
+      item = [
+        {
+          image: "./images/project/mobileDev/17.png",
+        },
+        {
+          image: "./images/project/mobileDev/18.png",
+        },
+        {
+          image: "./images/project/mobileDev/19.png",
+        },
+        {
+          image: "./images/project/mobileDev/20.png",
+        },
+        {
+          image: "./images/project/mobileDev/21.png",
+        },
+        {
+          image: "./images/project/mobileDev/22.png",
+        }, {
+          image: "./images/project/mobileDev/23.png",
+        }, {
+          image: "./images/project/mobileDev/24.png",
+        }, {
+          image: "./images/project/mobileDev/25.png",
+        }, {
+          image: "./images/project/mobileDev/26.png",
+        }, 
+        
+      ];
     }
 
     return (
@@ -89,7 +119,9 @@ const Mobile = (props) => {
   }
   function Item(props) {
     return (
-      <Paper style={{ display: "flex", justifyContent: "center" ,padding:'20px'}}>
+      <Paper
+        style={{ display: "flex", justifyContent: "center", padding: "20px" }}
+      >
         <img
           src={`${props.item.image}`}
           style={{ width: "30%", boxShadow: " 3px 3px 5px 3px #ccc" }}
@@ -103,6 +135,22 @@ const Mobile = (props) => {
     {
       icons: [
         {
+          intro: "DekCare Project",
+          content:
+            " An online application taht provide community, consultation doctors and analysis poop health​ ",
+          title: "DekCare",
+          year: "2021",
+          img: "./images/project/mobileDev/dekcare.png",
+          front: "Flutter",
+          width: "235px",
+          back: "Express",
+          socket: "",
+          db: "MySql",
+          link: "",
+          css: "",
+          site: "",
+        },
+        {
           intro: "Memby Management System",
           content:
             " An online membership system application for SMEs and online shop owner​ ",
@@ -110,6 +158,7 @@ const Mobile = (props) => {
           year: "2021",
           img: "./images/project/mobileDev/memby.png",
           front: "Flutter",
+          width: "300px",
           back: "Firebase",
           socket: "",
           db: "Firestore",
@@ -117,6 +166,7 @@ const Mobile = (props) => {
           css: "",
           site: "",
         },
+        
       ],
     },
   ];
@@ -213,7 +263,7 @@ const Mobile = (props) => {
                       <div className="container">
                         <img
                           src={`${s.img}`}
-                          style={{ width: "100%", borderRadius: "32px" }}
+                          style={{ width: `${s.width}`, borderRadius: "32px" }}
                         ></img>
 
                         <h3 className="font">{s.title}</h3>

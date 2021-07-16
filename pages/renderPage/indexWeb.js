@@ -5,6 +5,7 @@ import Footer from "../../component/Footer";
 import Link from "next/link";
 
 const Home = () => {
+  //count down to
   return (
     <Fragment>
       <div>

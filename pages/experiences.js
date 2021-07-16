@@ -31,7 +31,7 @@ const General = (props) => {
           <h1>Showcase</h1>
           <p>-Minimal & simple are a passion of mine-</p>
           <p> I will try my best to create good quality and work</p>
-          <p>The showcase composes of Web Development and Graphic design</p>
+          <p>The showcase composes of Web Development, Mobile development, and Graphic design</p>
           <div className="row">
             {items.map((item) => {
               return (
