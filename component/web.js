@@ -122,12 +122,45 @@ const Web = (props) => {
   const skills = [
     {
       icons: [
+          {
+          intro: "DekCare Project",
+          content:
+            " An online application taht provide community, consultation doctors and analysis poop health​ ",
+          title: "DekCare",
+          year: "2021",
+          img: "./images/project/mobileDev/dekcare.png",
+          front: "Flutter",
+          width: "235px",
+          back: "Express",
+          socket: "",
+          db: "MySql",
+          link: "",
+          css: "",
+          site: "",
+        },
+        {
+          intro: "Memby Management System",
+          content:
+            " An online membership system application for SMEs and online shop owner​ ",
+          title: "Memby",
+          year: "2021",
+          img: "./images/project/mobileDev/memby.png",
+          front: "Flutter",
+          width: "300px",
+          back: "Firebase",
+          socket: "",
+          db: "Firestore",
+          link: "",
+          css: "",
+          site: "",
+        },
         {
           intro: "Eduroom is a project in Integrated Project",
           content:
             " It is an online learning platform that consists of many different systems such as Course, Forum, Learning Path, Message, etc ",
           title: "EDUROOM",
           year: "2020",
+            width: "100%",
           img: "./images/project/eduroom/1.png",
           front: "NextJS",
           back: "NodeJS",
@@ -145,12 +178,15 @@ const Web = (props) => {
           img: "./images/project/eduroom/2.png",
           front: "VueJS",
           back: "Java Servlet",
+            width: "100%",
+
           socket: "",
           db: `Microsoft SQL`,
           link: "github.com/wiree65/staff",
           css: "Vuetify",
           site: "",
         },
+        
       ],
     },
   ];
@@ -249,7 +285,7 @@ const Web = (props) => {
                       <div className="container">
                         <img
                           src={`${s.img}`}
-                          style={{ width: "100%", borderRadius: "32px" }}
+                           style={{ width: `${s.width}`, borderRadius: "32px" }}
                         ></img>
 
                         <h3 className="font">{s.title}</h3>
