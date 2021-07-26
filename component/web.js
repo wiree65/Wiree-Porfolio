@@ -23,10 +23,10 @@ const Web = (props) => {
   const handleClose = () => {
     setOpen(false);
   };
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
   function Example(props) {
     var item;
-    if (popup == 0) {
+    if (popup == 3) {
       item = [
         {
           image: "./images/project/eduroom/imageE/1.png",
@@ -50,7 +50,8 @@ const Web = (props) => {
           image: "./images/project/eduroom/imageE/7.png",
         },
       ];
-    } else {
+    }
+    if (popup == 2) {
       item = [
         {
           image: "./images/project/eduroom/projectCSB/1.png",
@@ -88,6 +89,87 @@ const Web = (props) => {
         },
       ];
     }
+    if (popup == 1) {
+      item = [
+        {
+          image: "./images/project/mobileDev/1.png",
+        },
+        {
+          image: "./images/project/mobileDev/2.png",
+        },
+        {
+          image: "./images/project/mobileDev/3.png",
+        },
+        {
+          image: "./images/project/mobileDev/4.png",
+        },
+        {
+          image: "./images/project/mobileDev/5.png",
+        },
+        {
+          image: "./images/project/mobileDev/6.png",
+        },
+        {
+          image: "./images/project/mobileDev/7.png",
+        },
+        {
+          image: "./images/project/mobileDev/8.png",
+        },
+        {
+          image: "./images/project/mobileDev/9.png",
+        },
+        {
+          image: "./images/project/mobileDev/10.png",
+        },
+        {
+          image: "./images/project/mobileDev/11.png",
+        },
+        {
+          image: "./images/project/mobileDev/12.png",
+        },
+        {
+          image: "./images/project/mobileDev/13.png",
+        },
+        {
+          image: "./images/project/mobileDev/14.png",
+        },
+        {
+          image: "./images/project/mobileDev/15.png",
+        },
+        {
+          image: "./images/project/mobileDev/16.png",
+        },
+      ];
+    } else if (popup == 0) {
+      item = [
+        {
+          image: "./images/project/mobileDev/17.png",
+        },
+        {
+          image: "./images/project/mobileDev/18.png",
+        },
+        {
+          image: "./images/project/mobileDev/19.png",
+        },
+        {
+          image: "./images/project/mobileDev/20.png",
+        },
+        {
+          image: "./images/project/mobileDev/21.png",
+        },
+        {
+          image: "./images/project/mobileDev/22.png",
+        }, {
+          image: "./images/project/mobileDev/23.png",
+        }, {
+          image: "./images/project/mobileDev/24.png",
+        }, {
+          image: "./images/project/mobileDev/25.png",
+        }, {
+          image: "./images/project/mobileDev/26.png",
+        },
+      ];
+    }
 
     return (
       <Carousel>
@@ -108,13 +190,13 @@ const Web = (props) => {
     return (
       <Paper>
         {loaded ? (
-                  <div>{}</div>
-                ) : (
-                  <p>
-                    test
-                  </p>
-                )}
-        
+          <div>{ }</div>
+        ) : (
+          <p>
+            test
+          </p>
+        )}
+
         <img src={`${props.item.image}`} onLoad={handleLoad} style={{ width: "100%" }}></img>
       </Paper>
     );
@@ -122,7 +204,7 @@ const Web = (props) => {
   const skills = [
     {
       icons: [
-          {
+        {
           intro: "DekCare Project",
           content:
             " An online application taht provide community, consultation doctors and analysis poop health​ ",
@@ -160,7 +242,7 @@ const Web = (props) => {
             " It is an online learning platform that consists of many different systems such as Course, Forum, Learning Path, Message, etc ",
           title: "EDUROOM",
           year: "2020",
-            width: "100%",
+          width: "100%",
           img: "./images/project/eduroom/1.png",
           front: "NextJS",
           back: "NodeJS",
@@ -178,7 +260,7 @@ const Web = (props) => {
           img: "./images/project/eduroom/2.png",
           front: "VueJS",
           back: "Java Servlet",
-            width: "100%",
+          width: "100%",
 
           socket: "",
           db: `Microsoft SQL`,
@@ -186,7 +268,7 @@ const Web = (props) => {
           css: "Vuetify",
           site: "",
         },
-        
+
       ],
     },
   ];
@@ -210,7 +292,7 @@ const Web = (props) => {
               <br />
               <DialogContentText id="alert-dialog-description">
                 {skills[0].icons[popup].content == "" ? (
-                  <div>{}</div>
+                  <div>{ }</div>
                 ) : (
                   <p>
                     <storng style={{ fontSize: "20px" }}>Detail: </storng>
@@ -218,7 +300,7 @@ const Web = (props) => {
                   </p>
                 )}
                 {skills[0].icons[popup].front == "" ? (
-                  <div>{}</div>
+                  <div>{ }</div>
                 ) : (
                   <p>
                     <storng style={{ fontSize: "20px" }}>
@@ -228,7 +310,7 @@ const Web = (props) => {
                   </p>
                 )}
                 {skills[0].icons[popup].db == "" ? (
-                  <div>{}</div>
+                  <div>{ }</div>
                 ) : (
                   <p>
                     <storng style={{ fontSize: "20px" }}>
@@ -238,7 +320,7 @@ const Web = (props) => {
                   </p>
                 )}
                 {skills[0].icons[popup].css == "" ? (
-                  <div>{}</div>
+                  <div>{ }</div>
                 ) : (
                   <p>
                     <storng style={{ fontSize: "20px" }}>CSS: </storng>
@@ -246,7 +328,7 @@ const Web = (props) => {
                   </p>
                 )}
                 {skills[0].icons[popup].socket == "" ? (
-                  <div>{}</div>
+                  <div>{ }</div>
                 ) : (
                   <p>
                     <storng style={{ fontSize: "20px" }}>Real-time </storng>
@@ -255,7 +337,7 @@ const Web = (props) => {
                 )}
 
                 {skills[0].icons[popup].link == "" ? (
-                  <div>{}</div>
+                  <div>{ }</div>
                 ) : (
                   <p>
                     <storng style={{ fontSize: "20px" }}>Link: </storng>
@@ -263,7 +345,7 @@ const Web = (props) => {
                   </p>
                 )}
                 {skills[0].icons[popup].site == "" ? (
-                  <div>{}</div>
+                  <div>{ }</div>
                 ) : (
                   <p>
                     <storng style={{ fontSize: "20px" }}>Site: </storng>
@@ -285,7 +367,7 @@ const Web = (props) => {
                       <div className="container">
                         <img
                           src={`${s.img}`}
-                           style={{ width: `${s.width}`, borderRadius: "32px" }}
+                          style={{ width: `${s.width}`, borderRadius: "32px" }}
                         ></img>
 
                         <h3 className="font">{s.title}</h3>
