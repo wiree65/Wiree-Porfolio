@@ -170,14 +170,23 @@ const Web = (props) => {
         },
       ];
     }
-
-    return (
-      <Carousel>
-        {item.map((item, i) => (
-          <Item key={i} item={item} />
-        ))}
-      </Carousel>
-    );
+    if (popup == 0 || popup == 1) {
+      return (
+        <Carousel>
+          {item.map((item, i) => (
+            <ItemMobile key={i} item={item} />
+          ))}
+        </Carousel>
+      );
+    } else {
+      return (
+        <Carousel>
+          {item.map((item, i) => (
+            <Item key={i} item={item} />
+          ))}
+        </Carousel>
+      );
+    }
   }
 
   const [loaded, setLoaded] = useState(false);
@@ -198,6 +207,21 @@ const Web = (props) => {
         )}
 
         <img src={`${props.item.image}`} onLoad={handleLoad} style={{ width: "100%" }}></img>
+      </Paper>
+    );
+  }
+
+  function ItemMobile(props) {
+    return (
+      <Paper
+        style={{ display: "flex", justifyContent: "center", padding: "20px" }}
+      >
+        <img
+          src={`${props.item.image}`}
+          style={{ width: "30%", boxShadow: " 3px 3px 5px 3px #ccc" }}
+        >
+          { }
+        </img>
       </Paper>
     );
   }
