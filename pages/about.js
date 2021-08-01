@@ -120,7 +120,7 @@ const About = () => {
                     </div>
                     <Skills id={"font"}></Skills>
                   </div>
-                  <br/>
+                  <br />
                   <div className="card1">
                     <div className="row" style={{ paddingLeft: "20px" }}>
                       <h3 style={{ color: "#D18585", margin: "0px" }}>
@@ -128,7 +128,7 @@ const About = () => {
                       </h3>
                       <h3
                         style={{
-                          marginLeft: "5px",
+                          marginLeft: "2px",
                           margin: "0px  0px 0px 5px",
                         }}
                       >

@@ -15,13 +15,25 @@ i {
     justify-content: center;
     text-align:center;
     align-items: center;
+    flex-wrap:wrap;
+  }
+  .rowfront {
+    display: grid;
+    justify-content: center;
+    text-align:center
+    // width: 100px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
   }
   .column {
     margin: 20px;
+    // width:240px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap:wrap;
   }
   .font {
     font-size: 13px;
@@ -37,7 +49,7 @@ i {
       font-weight: 500;
     }
     .icon {
-      width: 25px;
+      width: 20px;
     }
     .icon1 {
       width: 42.5px;

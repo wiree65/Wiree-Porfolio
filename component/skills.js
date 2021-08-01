@@ -11,6 +11,9 @@ const Skills = ({ id }) => {
         { title: "Vue.js", icon: "vuejs" },
         { title: "React", icon: "react" },
         { title: "Next.js", icon: "/images/nextjs-logo.png" },
+        { title: "Tailwind", icon: "/images/tailwind.png" },
+        { title: "Pug", icon: "/images/pug.png" },
+
       ],
     },
   ];
@@ -23,8 +26,8 @@ const Skills = ({ id }) => {
         { title: "PostgreSQL", icon: "/images/postgre.png" },
         { title: "Firebase", icon: "/images/firebase.png" },
 
-        
-   
+
+
       ],
     },
   ];
@@ -36,8 +39,8 @@ const Skills = ({ id }) => {
 
         { title: "Docker", icon: "fab fa-docker" },
         { title: "Figma", icon: "/images/figma.png" },
-        
-        
+
+
       ],
     },
   ];
@@ -57,7 +60,7 @@ const Skills = ({ id }) => {
           <div>
             {skills.map((i, index) => (
               <div key={index}>
-                <div className="row">
+                <div className="rowfront">
                   {i.icons.map((s, i) => (
                     <div>
                       <div className="column" key={i}>
@@ -91,13 +94,13 @@ const Skills = ({ id }) => {
                   {i.icons.map((s, i) => (
                     <div>
                       <div className="column" key={i}>
-                
-                      {s.icon.substring(0, 1) == "/" ? (
+
+                        {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon"></img>
                         ) : (
-                          <i className={`${s.icon}` }></i>
+                          <i className={`${s.icon}`}></i>
                         )}
-             
+
 
                         <p className="font">{s.title}</p>
                       </div>

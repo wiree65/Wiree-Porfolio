@@ -68,7 +68,7 @@ const General = (props) => {
           font-weight: 700;
           background-color: #d18585;
           color: white;
-          border-radius:32px;
+          border-radius:15px;
           box-shadow: 1px 1px 2px 1px #cccc;
 
           border-bottom: 3px solid #d18585;

@@ -53,17 +53,18 @@ export default css`
     flex-direction: column;
   }
   .card1 {
-    height: 140px;
+    height: 100%;
     display: flex;
 
     background: white;
     transition: 0.3s;
-    width: 450px;
+    width: 500px;
     padding: 10px;
     border-radius: 2vh;
     border: none;
     box-shadow: 3px 3px 5px 3px #ccc;
     flex-direction: column;
+    flex-wrap:wrap;
   }
   .motion {
     position: relative;
