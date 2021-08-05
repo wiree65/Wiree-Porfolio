@@ -26,7 +26,7 @@ const Web = (props) => {
   useEffect(() => { }, []);
   function Example(props) {
     var item;
-    if (popup == 3) {
+    if (popup == 2) {
       item = [
         {
           image: "./images/project/eduroom/imageE/1.png",
@@ -51,7 +51,7 @@ const Web = (props) => {
         },
       ];
     }
-    if (popup == 2) {
+    if (popup == 3) {
       item = [
         {
           image: "./images/project/eduroom/projectCSB/1.png",
